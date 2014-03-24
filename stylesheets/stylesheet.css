@@ -130,13 +130,13 @@ a {
 
 /* line 121, ../sass/stylesheet.scss */
 a:hover, a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* line 123, ../sass/stylesheet.scss */
 footer a {
   color: #F2F2F2;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* line 128, ../sass/stylesheet.scss */
