@@ -2,13 +2,11 @@
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
-
 @import url(pygment_trac.css);
-
 /*******************************************************************************
 MeyerWeb Reset
 *******************************************************************************/
-
+/* line 24, ../sass/stylesheet.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,15 +28,18 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
+/* line 34, ../sass/stylesheet.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+/* line 38, ../sass/stylesheet.scss */
 ol, ul {
   list-style: none;
 }
 
+/* line 42, ../sass/stylesheet.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -47,10 +48,10 @@ table {
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
-
+/* line 51, ../sass/stylesheet.scss */
 body {
   box-sizing: border-box;
-  color:#373737;
+  color: #373737;
   background: #212121;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
@@ -58,54 +59,63 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 61, ../sass/stylesheet.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color: #222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
+/* line 69, ../sass/stylesheet.scss */
 h1 {
   font-size: 36px;
   font-weight: 700;
 }
 
+/* line 74, ../sass/stylesheet.scss */
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
+  background: url("../images/bg_hr.png") repeat-x bottom;
 }
 
+/* line 80, ../sass/stylesheet.scss */
 h3 {
   font-size: 24px;
 }
 
+/* line 84, ../sass/stylesheet.scss */
 h4 {
   font-size: 21px;
 }
 
+/* line 88, ../sass/stylesheet.scss */
 h5 {
   font-size: 18px;
 }
 
+/* line 92, ../sass/stylesheet.scss */
 h6 {
   font-size: 16px;
 }
 
+/* line 96, ../sass/stylesheet.scss */
 p {
   margin: 10px 0 15px 0;
 }
 
+/* line 100, ../sass/stylesheet.scss */
 footer p {
   color: #f2f2f2;
 }
 
+/* line 104, ../sass/stylesheet.scss */
 a {
   text-decoration: none;
   color: #007edf;
   text-shadow: none;
-
   transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease;
@@ -118,21 +128,28 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+/* line 121, ../sass/stylesheet.scss */
+a:hover, a:focus {
+  text-decoration: underline;
+}
 
+/* line 123, ../sass/stylesheet.scss */
 footer a {
   color: #F2F2F2;
   text-decoration: underline;
 }
 
+/* line 128, ../sass/stylesheet.scss */
 em {
   font-style: italic;
 }
 
+/* line 132, ../sass/stylesheet.scss */
 strong {
   font-weight: bold;
 }
 
+/* line 136, ../sass/stylesheet.scss */
 img {
   position: relative;
   margin: 0 auto;
@@ -140,7 +157,6 @@ img {
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
-
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
   -moz-box-shadow: 0 0 5px #ebebeb;
@@ -148,6 +164,7 @@ img {
   -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
+/* line 151, ../sass/stylesheet.scss */
 p img {
   display: inline;
   margin: 0;
@@ -157,37 +174,40 @@ p img {
   border: none;
 }
 
+/* line 160, ../sass/stylesheet.scss */
 pre, code {
   width: 100%;
   color: #222;
   background-color: #fff;
-
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
-
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
 }
 
+/* line 173, ../sass/stylesheet.scss */
 pre {
   width: 100%;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: auto;
 }
 
+/* line 180, ../sass/stylesheet.scss */
 code {
   padding: 3px;
   margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* line 186, ../sass/stylesheet.scss */
 pre code {
   display: block;
   box-shadow: none;
 }
 
+/* line 191, ../sass/stylesheet.scss */
 blockquote {
   color: #666;
   margin-bottom: 20px;
@@ -195,60 +215,70 @@ blockquote {
   border-left: 3px solid #bbb;
 }
 
-
+/* line 199, ../sass/stylesheet.scss */
 ul, ol, dl {
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
+/* line 203, ../sass/stylesheet.scss */
 ul {
   list-style: inside;
   padding-left: 20px;
 }
 
+/* line 208, ../sass/stylesheet.scss */
 ol {
   list-style: decimal inside;
   padding-left: 20px;
 }
 
+/* line 213, ../sass/stylesheet.scss */
 dl dt {
   font-weight: bold;
 }
 
+/* line 217, ../sass/stylesheet.scss */
 dl dd {
   padding-left: 20px;
   font-style: italic;
 }
 
+/* line 222, ../sass/stylesheet.scss */
 dl p {
   padding-left: 20px;
   font-style: italic;
 }
 
+/* line 227, ../sass/stylesheet.scss */
 hr {
   height: 1px;
   margin-bottom: 5px;
   border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
+  background: url("../images/bg_hr.png") repeat-x center;
 }
 
+/* line 234, ../sass/stylesheet.scss */
 table {
   border: 1px solid #373737;
   margin-bottom: 20px;
   text-align: left;
- }
+}
 
+/* line 240, ../sass/stylesheet.scss */
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
   background: #373737;
   color: #fff;
- }
+}
 
+/* line 247, ../sass/stylesheet.scss */
 td {
   padding: 10px;
   border: 1px solid #373737;
- }
+}
 
+/* line 252, ../sass/stylesheet.scss */
 form {
   background: #f2f2f2;
   padding: 20px;
@@ -257,11 +287,12 @@ form {
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
-
+/* line 261, ../sass/stylesheet.scss */
 .outer {
   width: 100%;
 }
 
+/* line 265, ../sass/stylesheet.scss */
 .inner {
   position: relative;
   max-width: 640px;
@@ -269,21 +300,23 @@ Full-Width Styles
   margin: 0 auto;
 }
 
+/* line 272, ../sass/stylesheet.scss */
 #forkme_banner {
   display: block;
   position: absolute;
-  top:0;
+  top: 0;
   right: 10px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url("../images/blacktocat.png") #0090ff no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
+/* line 287, ../sass/stylesheet.scss */
 #header_wrap {
   background: #212121;
   background: -moz-linear-gradient(top, #373737, #212121);
@@ -293,10 +326,12 @@ Full-Width Styles
   background: linear-gradient(top, #373737, #212121);
 }
 
+/* line 296, ../sass/stylesheet.scss */
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
 }
 
+/* line 300, ../sass/stylesheet.scss */
 #project_title {
   margin: 0;
   color: #fff;
@@ -305,6 +340,7 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+/* line 308, ../sass/stylesheet.scss */
 #project_tagline {
   color: #fff;
   font-size: 24px;
@@ -313,6 +349,7 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+/* line 316, ../sass/stylesheet.scss */
 #downloads {
   position: absolute;
   width: 210px;
@@ -320,104 +357,118 @@ Full-Width Styles
   bottom: -40px;
   right: 0;
   height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
+  background: url("../images/icon_download.png") no-repeat 0% 90%;
 }
 
+/* line 326, ../sass/stylesheet.scss */
 .zip_download_link {
   display: block;
   float: right;
   width: 90px;
-  height:70px;
+  height: 70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom left;
 }
 
+/* line 336, ../sass/stylesheet.scss */
 .tar_download_link {
   display: block;
   float: right;
   width: 90px;
-  height:70px;
+  height: 70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom right;
   margin-left: 10px;
 }
 
+/* line 347, ../sass/stylesheet.scss */
 .zip_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top left;
 }
 
+/* line 351, ../sass/stylesheet.scss */
 .tar_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
+/* line 355, ../sass/stylesheet.scss */
 #main_content_wrap {
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
 
+/* line 361, ../sass/stylesheet.scss */
 #main_content {
   padding-top: 40px;
 }
 
+/* line 365, ../sass/stylesheet.scss */
 #footer_wrap {
   background: #212121;
 }
 
-
-
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
-
 @media screen and (max-width: 480px) {
+  /* line 376, ../sass/stylesheet.scss */
   body {
-    font-size:14px;
+    font-size: 14px;
   }
 
+  /* line 380, ../sass/stylesheet.scss */
   #downloads {
     display: none;
   }
 
+  /* line 384, ../sass/stylesheet.scss */
   .inner {
     min-width: 320px;
     max-width: 480px;
   }
 
+  /* line 389, ../sass/stylesheet.scss */
   #project_title {
-  font-size: 32px;
+    font-size: 32px;
   }
 
+  /* line 393, ../sass/stylesheet.scss */
   h1 {
     font-size: 28px;
   }
 
+  /* line 397, ../sass/stylesheet.scss */
   h2 {
     font-size: 24px;
   }
 
+  /* line 401, ../sass/stylesheet.scss */
   h3 {
     font-size: 21px;
   }
 
+  /* line 405, ../sass/stylesheet.scss */
   h4 {
     font-size: 18px;
   }
 
+  /* line 409, ../sass/stylesheet.scss */
   h5 {
     font-size: 14px;
   }
 
+  /* line 413, ../sass/stylesheet.scss */
   h6 {
     font-size: 12px;
   }
 
+  /* line 417, ../sass/stylesheet.scss */
   code, pre {
     min-width: 320px;
     max-width: 480px;
     font-size: 11px;
   }
-
 }
