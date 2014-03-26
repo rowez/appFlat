@@ -1,0 +1,12 @@
+[submodule "rack"]
+	path = rack
+	url = git://github.com/chneukirchen/rack.git
+[submodule "github/rack"]
+	path = github/rack
+	url = git://github.com/chneukirchen/rack.git
+[submodule "FooTable"]
+	path = FooTable
+	url = /var/www/appFlat/github/FooTable/
+[submodule "github/FooTable"]
+	path = github/FooTable
+	url = https://github.com/bradvin/FooTable.git
