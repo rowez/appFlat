@@ -1,0 +1,56 @@
+/*Style reset by Eric Meyer*/
+@import 'reset';
+
+/*Personal style*/
+@import 'colors';
+@import 'custom';
+
+body {font-size: 18px;}
+
+@import 'breakpoints';
+
+$i: 10;
+@while $i > 0 {
+  .cols-#{$i} { width: 100% / $i; }
+  $i: $i - 1;
+}
+
+#main_wrap {
+	width: 100%;
+}
+
+#header_wrap { 
+	width: 100%;
+	@extend .c2;	
+	.inner {}
+	.outer {}
+}
+
+#slideshow_wrap {
+	width: 100%;
+	display: none;
+}
+
+#menu_wrap {
+	@extend .c5;
+	a {text-decoration: none;}
+	li {float: left; text-align: center;}
+}
+
+#sidebar_left_wrap {
+}
+
+#main_content_wrap {
+}
+
+#table_wrap {
+	width: 90%;
+}
+
+#footer_wrap {
+}
+
+img{
+	width: 99.6%;
+	margin: 0.2%;
+}

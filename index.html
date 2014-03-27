@@ -8,13 +8,14 @@
     <meta name="description" content="Appflat : " />
     <!-- Better not to use viewports! Why? -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/estyle.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/footable.standalone.css" media="screen"/>
 	<!--<link rel="stylesheet" type="text/css" href="stylesheets/jquery.mobile-1.4.2.min.css" media="screen">
-	--><link rel="stylesheet" type="text/css" href="stylesheets/footable.core.css" media="screen"/>
-	<script src="/appFlat/js/jquery-1.11.0.min.js"></script>
+	--><script src="/appFlat/js/jquery-1.11.0.min.js"></script>
 	<script src="/appFlat/github/FooTable/js/footable.js"></script>
-	<!--<script src="/appFlat/github/FooTable/js/footable.sort.js"></script>
-		--><!--[if lt IE 9]>
+	<script src="/appFlat/github/FooTable/js/footable.sort.js"></script>
+	<script src="/appFlat/github/cycle2/build/jquery.cycle2.js"></script>
+		<!--[if lt IE 9]>
 		<script src="/appFlat/js/respond.min.js"></script>
 		<script> src="http://html5shiv.googlecode.com/svn/trunk/html5.js"</script>
 		<![endif]-->
@@ -32,49 +33,56 @@
 	</script>
 	<style>	</style>
   </head>
-
-	<body><div id="main wrap">
+	<body><div id="main_wrap">
 		<div id="header_wrap" class="outer">
-			<header class="inner">
-	<ul>
-		<li><a href="zien/thuis">Thuis</a></li>
-		<li><a href="zien/rowez">Rowez</a></li>
-		<li><a href="zien/over">Over</a></li>
-	</ul>
-				<img src="images/2560_4320x3240_IMG_4462.JPG">
-			  <!-- <a id="forkme_banner" href="https://github.com/rowez/appFlat">View on GitHub</a>
-			--></header>
+<header class="inner">
+<div id="menu_wrap">  <!-- menu main -->
+<ul>
+<li class="cols-3"><a href="zien/thuis">Thuis</a></li>
+<li class="cols-3"><a href="zien/rowez">Rowez</a></li>
+<li class="cols-3"><a href="zien/over">Over</a></li>
+</ul>
+</div>
+<img src="images/2560_4320x3240_IMG_4462.JPG">
+<!-- <a id="forkme_banner" href="https://github.com/rowez/appFlat">View on GitHub</a>
+-->
+</header>
 		</div>
-		<div id=slideshow wrap">
-		</div>
-		<div id="menu wrap">
-		</div>
-		<div id="sidebar left wrap" class="sidebar">
+<div id="slideshow_wrap"> <!-- declare a slideshow -->
+<div class="cycle-slideshow">
+<img src="http://malsup.github.com/images/p1.jpg">
+<img src="http://malsup.github.com/images/p2.jpg">
+<img src="http://malsup.github.com/images/p3.jpg">
+</div>
+</div>
+<div id="menu_wrap"> <!-- menu divers -->
+<ul> 
+<li class="cols-2"><a href="handboek.html">Handboek (NL)</a></li>
+<li class="cols-2"><a href="index-gh-page.html">GitHub page</a></li>
+</ul>
+</div>
+		<div id="sidebar_left_wrap" class="sidebar">
 		</div>
 		<div id="main_content_wrap" class="outer">
 		  <section id="main_content" class="inner">
-			  <ul>
-				  <li><a href="handboek.html">Handboek (NL)</a></li>
-				  <li><a href="index-gh-page.html">GitHub page</a></li>
-			  </ul>
 			  <img src="images/580x200_uiterwaardondergelopen.jpg">
 		  </section>
 		</div>
 <hr>		  
-<div class="table wrap">
+<div class="table_wrap">
 	<!-- http://css-tricks.com/footable-a-jquery-plugin-for-responsive-data-tables/ -->
     <table id="footable" data-filter="#filter">
 		<caption>Table responsive?</caption>
       <thead>
         <tr>
-		  <th data-sort-initial="descending" data-class="expand">Small</th>
-          <th data-hide="phone" data-type="numeric">CustomerID</th>
+		  <th data-sort-initial="ascending" data-class="expand">Small</th>
+          <th data-hide="all" data-type="numeric">CustomerID</th>
           <th data-sort-ignore="true">CustomerName</th>
-          <th data-hide="all">ContactName</th>
-          <th data-hide="all">Address</th>
-          <th data-hide="all">City</th>
-          <th>PostalCode</th>
-          <th>Country</th>
+          <th>ContactName</th>
+          <th data-hide="phone">Address</th>
+          <th data-hide="table">City</th>
+          <th data-hide="table">PostalCode</th>
+          <th data-hide="table">Country</th>
         </tr>
       </thead>
       <tbody>
@@ -121,7 +129,7 @@
       </tbody>
     </table>
 </div>
-		<div id="footer_wrap" class="outer">
+<div id="footer_wrap" class="outer">
 		  <footer class="inner">
 		  </footer>
 		</div>

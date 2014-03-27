@@ -2,6 +2,7 @@
 @import 'reset';
 
 /*Personal style*/
+@import 'breakpoints';
 @import 'colors';
 @import 'custom';
 
@@ -11,13 +12,12 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  @extend .c3;
-  font-size: 16px;
+
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background: { 
-	image: url("1600x1200_lammeren.gif");
+	image: url("../images/1600x1200_lammeren.gif");
 	repeat: no-repeat;
 	position: right top;
   }
@@ -106,7 +106,7 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 95%;
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
@@ -128,7 +128,7 @@ p img {
 }
 
 pre, code {
-  width: 100%;
+  width: 95%;
   @extend .c4;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
@@ -139,7 +139,7 @@ pre, code {
 }
 
 pre {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   overflow: auto;
@@ -201,7 +201,7 @@ hr {
 }
 
 table {
-  @extend .c2;
+  @extend .c5;
   margin-bottom: 20px;
   text-align: left;
  }
@@ -228,7 +228,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 50%;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -332,56 +332,3 @@ Full-Width Styles
 
 
 
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
-
-@media screen and (max-width: 480px) {
-  body {
-    font-size:14px;
-  }
-
-  #downloads {
-    display: none;
-  }
-
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
-  }
-
-  #project_title {
-  font-size: 32px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-
-  h6 {
-    font-size: 12px;
-  }
-
-  code, pre {
-    min-width: 320px;
-    max-width: 480px;
-    font-size: 11px;
-  }
-
-}

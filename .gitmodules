@@ -10,3 +10,9 @@
 [submodule "github/FooTable"]
 	path = github/FooTable
 	url = https://github.com/bradvin/FooTable.git
+[submodule "github/Font-Size-Responsive"]
+	path = github/Font-Size-Responsive
+	url = https://github.com/pavelkukov/Font-Size-Responsive-CSS.git
+[submodule "github/cycle2"]
+	path = github/cycle2
+	url = https://github.com/malsup/cycle2.git

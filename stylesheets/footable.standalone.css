@@ -1,42 +1,96 @@
+/* line 1, ../sass/_colors.scss */
+.c1, .footable-odd {
+  background-color: #3d5c99;
+  /*#3D5C99*/
+  color: #FFFFA3;
+  border-color: #FFFFA3;
+}
+
+/* line 6, ../sass/_colors.scss */
+.c2, .footable .pagination > ul > .disabled > span,
+.footable .pagination > ul > .disabled > a,
+.footable .pagination > ul > .disabled > a:hover,
+.footable .pagination > ul > .disabled > a:focus {
+  background-color: #527acc;
+  /*#527ACC*/
+  color: #FFFF85;
+}
+
+/* line 10, ../sass/_colors.scss */
+.c3, .footable > thead > tr > th,
+.footable > thead > tr > td {
+  background-color: #6699ff;
+  /*#6699FF*/
+  color: #FFFF66;
+  border-color: #FFFF66;
+}
+
+/* line 15, ../sass/_colors.scss */
+.c4, .footable .pagination > ul > .active > a,
+.footable .pagination > ul > .active > span {
+  background-color: #85ADFF;
+  color: #CCCC52;
+}
+
+/* line 19, ../sass/_colors.scss */
+.c5, .footable {
+  background-color: #A3C2FF;
+  color: #99993D;
+}
+
+/* line 23, ../sass/_colors.scss */
+.cf {
+  background-color: lightgreen;
+  color: green;
+  border-color: green;
+}
+
+/* line 3, ../sass/footable.standalone.scss */
 .footable {
   border-collapse: separate;
   border-spacing: 0;
-  border: 1px solid #cccccc;
+  border: 1px solid;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   font-family: 'trebuchet MS', 'Lucida sans', Arial;
-  font-size: 14px;
-  color: #444444;
-  background: #ffffff;
 }
+
+/* line 14, ../sass/footable.standalone.scss */
 .footable > thead > tr:first-child > th.footable-first-column,
 .footable > thead > tr:first-child > td.footable-first-column {
   -moz-border-radius: 6px 0 0 0;
   -webkit-border-radius: 6px 0 0 0;
   border-radius: 6px 0 0 0;
 }
+
+/* line 20, ../sass/footable.standalone.scss */
 .footable > thead > tr:first-child > th.footable-last-column,
 .footable > thead > tr:first-child > td.footable-last-column {
   -moz-border-radius: 0 6px 0 0;
   -webkit-border-radius: 0 6px 0 0;
   border-radius: 0 6px 0 0;
 }
+
+/* line 26, ../sass/footable.standalone.scss */
 .footable > thead > tr:first-child > th.footable-first-column.footable-last-column,
 .footable > thead > tr:first-child > td.footable-first-column.footable-last-column {
   -moz-border-radius: 6px 6px 0 0;
   -webkit-border-radius: 6px 6px 0 0;
   border-radius: 6px 6px 0 0;
 }
+
+/* line 31, ../sass/footable.standalone.scss */
 .footable > thead > tr > th {
-  border-left: 1px solid #cccccc;
-  border-top: 1px solid #cccccc;
+  border-left: 1px solid;
+  border-top: 1px solid;
   padding: 10px;
   text-align: left;
 }
+
+/* line 38, ../sass/footable.standalone.scss */
 .footable > thead > tr > th,
 .footable > thead > tr > td {
-  background-color: #dce9f9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
   background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
   background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
@@ -49,46 +103,68 @@
   border-top: none;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
+
+/* line 53, ../sass/footable.standalone.scss */
 .footable > thead > tr > th.footable-first-column,
 .footable > thead > tr > td.footable-first-column {
   border-left: none;
 }
+
+/* line 56, ../sass/footable.standalone.scss */
 .footable.breakpoint > tbody > tr.footable-row-detail {
   background: #eeeeee;
 }
+
+/* line 59, ../sass/footable.standalone.scss */
 .footable.breakpoint > tbody > tr.footable-row-detail > .footable-row-detail-cell {
   border-left: none;
 }
+
+/* line 62, ../sass/footable.standalone.scss */
 .footable > tbody img {
   vertical-align: middle;
 }
+
+/* line 65, ../sass/footable.standalone.scss */
 .footable > tbody > tr:hover {
   background: #fbf8e9;
 }
+
+/* line 68, ../sass/footable.standalone.scss */
 .footable > tbody > tr:last-child > td.footable-first-column {
   -moz-border-radius: 0 0 0 6px;
   -webkit-border-radius: 0 0 0 6px;
   border-radius: 0 0 0 6px;
 }
+
+/* line 73, ../sass/footable.standalone.scss */
 .footable > tbody > tr:last-child > td.footable-last-column {
   -moz-border-radius: 0 0 6px 0;
   -webkit-border-radius: 0 0 6px 0;
   border-radius: 0 0 6px 0;
 }
+
+/* line 78, ../sass/footable.standalone.scss */
 .footable > tbody > tr:last-child > td.footable-first-column.footable-last-column {
   -moz-border-radius: 0 0 6px 6px;
   -webkit-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
 }
+
+/* line 83, ../sass/footable.standalone.scss */
 .footable > tbody > tr > td {
   border-top: 1px solid #cccccc;
   border-left: 1px solid #cccccc;
   padding: 10px;
   text-align: left;
 }
+
+/* line 89, ../sass/footable.standalone.scss */
 .footable > tbody > tr > td.footable-first-column {
   border-left: none;
 }
+
+/* line 93, ../sass/footable.standalone.scss */
 .footable > tfoot > tr > th,
 .footable > tfoot > tr > td {
   background-color: #dce9f9;
@@ -105,9 +181,13 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   padding: 10px;
 }
+
+/* line 108, ../sass/footable.standalone.scss */
 .footable .pagination {
   margin: 20px 0;
 }
+
+/* line 111, ../sass/footable.standalone.scss */
 .footable .pagination > ul {
   display: inline-block;
   margin: 0;
@@ -120,9 +200,13 @@
   box-shadow: none;
   background-color: #ffffff;
 }
+
+/* line 123, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li {
   display: inline;
 }
+
+/* line 127, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li > a,
 .footable .pagination > ul > li > span {
   float: left;
@@ -132,6 +216,8 @@
   border: 1px solid #cccccc;
   border-left-width: 0;
 }
+
+/* line 136, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li:first-child > a,
 .footable .pagination > ul > li:first-child > span {
   -webkit-border-bottom-left-radius: 4px;
@@ -142,6 +228,8 @@
   border-top-left-radius: 4px;
   border-left-width: 1px;
 }
+
+/* line 146, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li:last-child > a,
 .footable .pagination > ul > li:last-child > span {
   -webkit-border-top-right-radius: 4px;
@@ -151,31 +239,35 @@
   -moz-border-radius-bottomright: 4px;
   border-bottom-right-radius: 4px;
 }
+
+/* line 157, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li > a:hover,
 .footable .pagination > ul > li > a:focus,
 .footable .pagination > ul > .active > a,
 .footable .pagination > ul > .active > span {
   background-color: #eeeeee;
 }
+
+/* line 161, ../sass/footable.standalone.scss */
 .footable .pagination > ul > .active > a,
 .footable .pagination > ul > .active > span {
-  color: #444444;
   cursor: default;
 }
+
+/* line 168, ../sass/footable.standalone.scss */
 .footable .pagination > ul > .disabled > span,
 .footable .pagination > ul > .disabled > a,
 .footable .pagination > ul > .disabled > a:hover,
 .footable .pagination > ul > .disabled > a:focus {
-  color: #cccccc;
   cursor: default;
-  background-color: #ebf3fc;
 }
+
+/* line 172, ../sass/footable.standalone.scss */
 .footable .pagination.pagination-centered {
   text-align: center;
 }
+
+/* line 175, ../sass/footable.standalone.scss */
 .footable .pagination.pagination-right {
   text-align: center;
-}
-.footable-odd {
-  background-color: #f7f7f7;
 }

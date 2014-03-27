@@ -1,0 +1,103 @@
+/* line 2, ../sass/style_unused.scss */
+table {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* line 8, ../sass/style_unused.scss */
+table, th, td {
+  border: 1px solid;
+  padding: 3px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 15, ../sass/style_unused.scss */
+thead th {
+  white-space: nowrap;
+}
+
+/* line 20, ../sass/style_unused.scss */
+th, td {
+  font-size: 1em;
+}
+
+/* line 24, ../sass/style_unused.scss */
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+/* line 28, ../sass/style_unused.scss */
+th {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  padding: 6px;
+}
+
+/* line 35, ../sass/style_unused.scss */
+td {
+  text-align: left;
+}
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+@media screen and (max-width: 480px) {
+  /* line 46, ../sass/style_unused.scss */
+  body {
+    font-size: 14px;
+  }
+
+  /* line 50, ../sass/style_unused.scss */
+  #downloads {
+    display: none;
+  }
+
+  /* line 54, ../sass/style_unused.scss */
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  /* line 59, ../sass/style_unused.scss */
+  #project_title {
+    font-size: 32px;
+  }
+
+  /* line 63, ../sass/style_unused.scss */
+  h1 {
+    font-size: 28px;
+  }
+
+  /* line 67, ../sass/style_unused.scss */
+  h2 {
+    font-size: 24px;
+  }
+
+  /* line 71, ../sass/style_unused.scss */
+  h3 {
+    font-size: 21px;
+  }
+
+  /* line 75, ../sass/style_unused.scss */
+  h4 {
+    font-size: 18px;
+  }
+
+  /* line 79, ../sass/style_unused.scss */
+  h5 {
+    font-size: 14px;
+  }
+
+  /* line 83, ../sass/style_unused.scss */
+  h6 {
+    font-size: 12px;
+  }
+
+  /* line 87, ../sass/style_unused.scss */
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+}

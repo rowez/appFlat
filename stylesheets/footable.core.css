@@ -1,38 +1,48 @@
 @font-face {
   font-family: 'footable';
-  src: url('fonts/footable.eot');
-  src: url('fonts/footable.eot?#iefix') format('embedded-opentype'), url('fonts/footable.woff') format('woff'), url('fonts/footable.ttf') format('truetype'), url('fonts/footable.svg#footable') format('svg');
+  src: url("fonts/footable.eot");
+  src: url("fonts/footable.eot?#iefix") format("embedded-opentype"), url("fonts/footable.woff") format("woff"), url("fonts/footable.ttf") format("truetype"), url("fonts/footable.svg#footable") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: 'footable';
-    src: url('fonts/footable.svg#footable') format('svg');
+    src: url("fonts/footable.svg#footable") format("svg");
     font-weight: normal;
     font-style: normal;
-  }
 }
+}
+/* line 16, ../sass/footable.core.scss */
 .footable {
   width: 100%;
   /** SORTING **/
-
   /** PAGINATION **/
-
 }
+
+/* line 23, ../sass/footable.core.scss */
 .footable.breakpoint > tbody > tr.footable-detail-show > td {
   border-bottom: none;
 }
+
+/* line 26, ../sass/footable.core.scss */
 .footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e001";
 }
+
+/* line 29, ../sass/footable.core.scss */
 .footable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
   cursor: pointer;
 }
+
+/* line 32, ../sass/footable.core.scss */
 .footable.breakpoint > tbody > tr > td.footable-cell-detail {
   background: #eee;
   border-top: none;
 }
+
+/* line 36, ../sass/footable.core.scss */
 .footable.breakpoint > tbody > tr > td > span.footable-toggle {
   display: inline-block;
   font-family: 'footable';
@@ -46,75 +56,123 @@
   font-size: 14px;
   color: #888888;
 }
+
+/* line 49, ../sass/footable.core.scss */
 .footable.breakpoint > tbody > tr > td > span.footable-toggle:before {
   content: "\e000";
 }
+
+/* line 52, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-circle > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e005";
 }
+
+/* line 55, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-circle > tbody > tr > td > span.footable-toggle:before {
   content: "\e004";
 }
+
+/* line 58, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-circle-filled > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e003";
 }
+
+/* line 61, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-circle-filled > tbody > tr > td > span.footable-toggle:before {
   content: "\e002";
 }
+
+/* line 64, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-square > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e007";
 }
+
+/* line 67, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-square > tbody > tr > td > span.footable-toggle:before {
   content: "\e006";
 }
+
+/* line 70, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-square-filled > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e009";
 }
+
+/* line 73, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-square-filled > tbody > tr > td > span.footable-toggle:before {
   content: "\e008";
 }
+
+/* line 76, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e00f";
 }
+
+/* line 79, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow > tbody > tr > td > span.footable-toggle:before {
   content: "\e011";
 }
+
+/* line 82, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-small > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e013";
 }
+
+/* line 85, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-small > tbody > tr > td > span.footable-toggle:before {
   content: "\e015";
 }
+
+/* line 88, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-circle > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e01b";
 }
+
+/* line 91, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-circle > tbody > tr > td > span.footable-toggle:before {
   content: "\e01d";
 }
+
+/* line 94, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-circle-filled > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e00b";
 }
+
+/* line 97, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-circle-filled > tbody > tr > td > span.footable-toggle:before {
   content: "\e00d";
 }
+
+/* line 100, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-tiny > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e01f";
 }
+
+/* line 103, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-tiny > tbody > tr > td > span.footable-toggle:before {
   content: "\e021";
 }
+
+/* line 106, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-alt > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
   content: "\e017";
 }
+
+/* line 109, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-arrow-alt > tbody > tr > td > span.footable-toggle:before {
   content: "\e019";
 }
+
+/* line 112, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-medium > tbody > tr > td > span.footable-toggle {
   font-size: 18px;
 }
+
+/* line 115, ../sass/footable.core.scss */
 .footable.breakpoint.toggle-large > tbody > tr > td > span.footable-toggle {
   font-size: 24px;
 }
+
+/* line 118, ../sass/footable.core.scss */
 .footable > thead > tr > th {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -123,15 +181,23 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+/* line 126, ../sass/footable.core.scss */
 .footable > thead > tr > th.footable-sortable:hover {
   cursor: pointer;
 }
+
+/* line 129, ../sass/footable.core.scss */
 .footable > thead > tr > th.footable-sorted > span.footable-sort-indicator:before {
   content: "\e013";
 }
+
+/* line 132, ../sass/footable.core.scss */
 .footable > thead > tr > th.footable-sorted-desc > span.footable-sort-indicator:before {
   content: "\e012";
 }
+
+/* line 135, ../sass/footable.core.scss */
 .footable > thead > tr > th > span.footable-sort-indicator {
   display: inline-block;
   font-family: 'footable';
@@ -143,36 +209,54 @@
   -webkit-font-smoothing: antialiased;
   padding-left: 5px;
 }
+
+/* line 146, ../sass/footable.core.scss */
 .footable > thead > tr > th > span.footable-sort-indicator:before {
   content: "\e022";
 }
+
+/* line 149, ../sass/footable.core.scss */
 .footable > tfoot .pagination {
   margin: 0;
 }
+
+/* line 152, ../sass/footable.core.scss */
 .footable.no-paging .hide-if-no-paging {
   display: none;
 }
+
+/* line 155, ../sass/footable.core.scss */
 .footable-row-detail-inner {
   display: table;
 }
+
+/* line 158, ../sass/footable.core.scss */
 .footable-row-detail-row {
   display: table-row;
   line-height: 1.5em;
 }
+
+/* line 162, ../sass/footable.core.scss */
 .footable-row-detail-group {
   display: block;
   line-height: 2em;
   font-size: 1.2em;
   font-weight: bold;
 }
+
+/* line 168, ../sass/footable.core.scss */
 .footable-row-detail-name {
   display: table-cell;
   font-weight: bold;
   padding-right: 0.5em;
 }
+
+/* line 173, ../sass/footable.core.scss */
 .footable-row-detail-value {
   display: table-cell;
 }
+
+/* line 176, ../sass/footable.core.scss */
 .footable-odd {
   background-color: #f7f7f7;
 }

@@ -1,0 +1,277 @@
+/*Style reset by Eric Meyer*/
+/**
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+/* line 17, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 33, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 36, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Personal style*/
+/* line 1, ../sass/_colors.scss */
+.c1 {
+  background-color: #3d5c99;
+  /*#3D5C99*/
+  color: #FFFFA3;
+  border-color: #FFFFA3;
+}
+
+/* line 6, ../sass/_colors.scss */
+.c2, #header_wrap {
+  background-color: #527acc;
+  /*#527ACC*/
+  color: #FFFF85;
+}
+
+/* line 10, ../sass/_colors.scss */
+.c3 {
+  background-color: #6699ff;
+  /*#6699FF*/
+  color: #FFFF66;
+  border-color: #FFFF66;
+}
+
+/* line 15, ../sass/_colors.scss */
+.c4 {
+  background-color: #85ADFF;
+  color: #CCCC52;
+}
+
+/* line 19, ../sass/_colors.scss */
+.c5, #menu_wrap {
+  background-color: #A3C2FF;
+  color: #99993D;
+}
+
+/* line 23, ../sass/_colors.scss */
+.cf {
+  background-color: lightgreen;
+  color: green;
+  border-color: green;
+}
+
+/* line 8, ../sass/estyle.scss */
+body {
+  font-size: 18px;
+}
+
+/*Background with the 17 standard colors*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 8, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: aqua;
+    font-size: 1em;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  /* line 15, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: fuchsia;
+    font-size: 1em;
+  }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  /* line 22, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: lime;
+    font-size: 1em;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  /* line 30, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: maroon;
+    font-size: 3em;
+  }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  /* line 39, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: navy;
+    font-size: 3em;
+  }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  /* line 48, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: olive;
+    font-size: 3em;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  /* line 55, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: purple;
+    font-size: 4em;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+  /* line 62, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: silver;
+    font-size: 6em;
+  }
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+  /* line 70, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: teal;
+  }
+}
+/* line 14, ../sass/estyle.scss */
+.cols-10 {
+  width: 10%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-9 {
+  width: 11.11111%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-8 {
+  width: 12.5%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-7 {
+  width: 14.28571%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-6 {
+  width: 16.66667%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-5 {
+  width: 20%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-4 {
+  width: 25%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-3 {
+  width: 33.33333%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-2 {
+  width: 50%;
+}
+
+/* line 14, ../sass/estyle.scss */
+.cols-1 {
+  width: 100%;
+}
+
+/* line 18, ../sass/estyle.scss */
+#main_wrap {
+  width: 100%;
+}
+
+/* line 22, ../sass/estyle.scss */
+#header_wrap {
+  width: 100%;
+}
+
+/* line 29, ../sass/estyle.scss */
+#slideshow_wrap {
+  width: 100%;
+  display: none;
+}
+
+/* line 36, ../sass/estyle.scss */
+#menu_wrap a {
+  text-decoration: none;
+}
+/* line 37, ../sass/estyle.scss */
+#menu_wrap li {
+  float: left;
+  text-align: center;
+}
+
+/* line 46, ../sass/estyle.scss */
+#table_wrap {
+  width: 90%;
+}
+
+/* line 53, ../sass/estyle.scss */
+img {
+  width: 99.6%;
+  margin: 0.2%;
+}
