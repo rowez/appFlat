@@ -16,3 +16,9 @@
 [submodule "github/cycle2"]
 	path = github/cycle2
 	url = https://github.com/malsup/cycle2.git
+[submodule "github/stackedit"]
+	path = github/stackedit
+	url = https://github.com/benweet/stackedit.git
+[submodule "github/ai"]
+	path = github/ai
+	url = https://github.com/MattWilcox/Adaptive-Images.git

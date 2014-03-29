@@ -62,7 +62,7 @@ table {
 
 /*Personal style*/
 /* line 1, ../sass/_colors.scss */
-.c1 {
+.c1, #ace_wrap {
   background-color: #3d5c99;
   /*#3D5C99*/
   color: #FFFFA3;
@@ -108,29 +108,48 @@ body {
   font-size: 18px;
 }
 
+/* 
+* max-width is the width of the target display area, e.g. the browser
+* max-device-width is the width of the device's entire rendering area, i.e. the actual device screen
+*/
 /*Background with the 17 standard colors*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 8, ../sass/_breakpoints.scss */
+  /* line 13, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 14, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: aqua;
     font-size: 1em;
   }
 }
-/* Smartphones (landscape) ----------- */
+/* Smartphones (landscape) ----------- roze*/
 @media only screen and (min-width: 321px) {
   /* Styles */
-  /* line 15, ../sass/_breakpoints.scss */
+  /* line 21, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 22, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: fuchsia;
     font-size: 1em;
   }
 }
-/* Smartphones (portrait) ----------- */
+/* Smartphones (portrait) ----------- groen*/
 @media only screen and (max-width: 320px) {
   /* Styles */
-  /* line 22, ../sass/_breakpoints.scss */
+  /* line 29, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 30, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: lime;
     font-size: 1em;
@@ -139,16 +158,26 @@ body {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
-  /* line 30, ../sass/_breakpoints.scss */
+  /* line 38, ../sass/_breakpoints.scss */
+  body {
+    width: 768px;
+  }
+
+  /* line 39, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: maroon;
     font-size: 3em;
   }
 }
-/* iPads (landscape) ----------- */
+/* iPads (landscape) ----------- donker blauw*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
-  /* line 39, ../sass/_breakpoints.scss */
+  /* line 48, ../sass/_breakpoints.scss */
+  body {
+    width: 768px;
+  }
+
+  /* line 49, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: navy;
     font-size: 3em;
@@ -157,25 +186,40 @@ body {
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
-  /* line 48, ../sass/_breakpoints.scss */
+  /* line 58, ../sass/_breakpoints.scss */
+  body {
+    width: 768px;
+  }
+
+  /* line 59, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: olive;
     font-size: 3em;
   }
 }
-/* Desktops and laptops ----------- */
+/* Desktops and laptops ----------- paars*/
 @media only screen and (min-width: 1224px) {
   /* Styles */
-  /* line 55, ../sass/_breakpoints.scss */
+  /* line 66, ../sass/_breakpoints.scss */
+  body {
+    width: 1224px;
+  }
+
+  /* line 67, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: purple;
     font-size: 4em;
   }
 }
-/* Large screens ----------- */
+/* Large screens ----------- silver*/
 @media only screen and (min-width: 1824px) {
   /* Styles */
-  /* line 62, ../sass/_breakpoints.scss */
+  /* line 74, ../sass/_breakpoints.scss */
+  body {
+    width: 1824px;
+  }
+
+  /* line 75, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: silver;
     font-size: 6em;
@@ -184,7 +228,7 @@ body {
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  /* line 70, ../sass/_breakpoints.scss */
+  /* line 83, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: teal;
   }
@@ -246,32 +290,62 @@ body {
 
 /* line 22, ../sass/estyle.scss */
 #header_wrap {
+  display: standard;
   width: 100%;
 }
 
-/* line 29, ../sass/estyle.scss */
+/* line 30, ../sass/estyle.scss */
 #slideshow_wrap {
   width: 100%;
-  display: none;
+  display: standard;
 }
 
-/* line 36, ../sass/estyle.scss */
+/* line 35, ../sass/estyle.scss */
+#menu_wrap {
+  display: standard;
+}
+/* line 38, ../sass/estyle.scss */
 #menu_wrap a {
   text-decoration: none;
 }
-/* line 37, ../sass/estyle.scss */
+/* line 39, ../sass/estyle.scss */
 #menu_wrap li {
   float: left;
   text-align: center;
 }
 
-/* line 46, ../sass/estyle.scss */
+/* line 45, ../sass/estyle.scss */
+#main_content_wrap {
+  display: standard;
+}
+
+/* line 49, ../sass/estyle.scss */
 #table_wrap {
+  display: standard;
   width: 90%;
 }
 
-/* line 53, ../sass/estyle.scss */
-img {
-  width: 99.6%;
+/* line 54, ../sass/estyle.scss */
+#ace_wrap {
+  width: 75%;
+}
+
+/* line 59, ../sass/estyle.scss */
+#editor {
+  position: absolute;
+  width: 98%;
+  height: 80%;
+}
+
+/* line 65, ../sass/estyle.scss */
+#footer_wrap {
+  display: standard;
+}
+
+/* line 69, ../sass/estyle.scss */
+img, object {
+  max-width: 99.6%;
+  width: 100%;
+  /* for IE*/
   margin: 0.2%;
 }

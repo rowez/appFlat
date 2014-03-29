@@ -20,6 +20,7 @@ $i: 10;
 }
 
 #header_wrap { 
+display: standard;
 	width: 100%;
 	@extend .c2;	
 	.inner {}
@@ -28,10 +29,11 @@ $i: 10;
 
 #slideshow_wrap {
 	width: 100%;
-	display: none;
+	display: standard;
 }
 
 #menu_wrap {
+	display: standard;
 	@extend .c5;
 	a {text-decoration: none;}
 	li {float: left; text-align: center;}
@@ -41,16 +43,31 @@ $i: 10;
 }
 
 #main_content_wrap {
+display: standard;
 }
 
 #table_wrap {
+	display: standard;
 	width: 90%;
 }
 
-#footer_wrap {
+#ace_wrap {
+	@extend .c1;
+	width: 75%;
 }
 
-img{
-	width: 99.6%;
+#editor {
+	position: absolute;
+	width: 98%;
+	height: 80%;
+}
+
+#footer_wrap {
+display: standard;
+}
+
+img, object {
+	max-width: 99.6%;
+	width: 100%; /* for IE*/
 	margin: 0.2%;
 }

@@ -1,3 +1,8 @@
+/* 
+* max-width is the width of the target display area, e.g. the browser
+* max-device-width is the width of the device's entire rendering area, i.e. the actual device screen
+*/
+
 /*Background with the 17 standard colors*/
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -5,20 +10,23 @@
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
+body{width:320px;}
 #main_wrap {background-color: aqua; font-size: 1em;}
 }
 
-/* Smartphones (landscape) ----------- */
+/* Smartphones (landscape) ----------- roze*/
 @media only screen 
 and (min-width : 321px) {
 /* Styles */
+body{width:320px;}
 #main_wrap {background-color: fuchsia; font-size: 1em;}
 }
 
-/* Smartphones (portrait) ----------- */
+/* Smartphones (portrait) ----------- groen*/
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
+body {width:320px;}
 #main_wrap {background-color: lime;  font-size: 1em;}
 }
 
@@ -27,15 +35,17 @@ and (max-width : 320px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
+body {width:768px;}
 #main_wrap {background-color: maroon; font-size: 3em;}
 }
 
-/* iPads (landscape) ----------- */
+/* iPads (landscape) ----------- donker blauw*/
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
 /* Styles */
+body {width:768px;}
 #main_wrap {background-color: navy; font-size: 3em;}
 }
 
@@ -45,20 +55,23 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
+body {width:768px;}
 #main_wrap {background-color: olive; font-size: 3em;}
 }
 
-/* Desktops and laptops ----------- */
+/* Desktops and laptops ----------- paars*/
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
+body{width:1224px; }
 #main_wrap {background-color: purple;  font-size: 4em;}
 }
 
-/* Large screens ----------- */
+/* Large screens ----------- silver*/
 @media only screen 
-and (min-width : 1824px) {
+and (min-width:1824px) {
 /* Styles */
+body{width:1824px;}
 #main_wrap {background-color: silver; font-size: 6em;}
 }
 

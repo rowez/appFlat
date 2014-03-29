@@ -61,29 +61,48 @@ table {
 }
 
 /*Personal style*/
+/* 
+* max-width is the width of the target display area, e.g. the browser
+* max-device-width is the width of the device's entire rendering area, i.e. the actual device screen
+*/
 /*Background with the 17 standard colors*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 8, ../sass/_breakpoints.scss */
+  /* line 13, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 14, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: aqua;
     font-size: 1em;
   }
 }
-/* Smartphones (landscape) ----------- */
+/* Smartphones (landscape) ----------- roze*/
 @media only screen and (min-width: 321px) {
   /* Styles */
-  /* line 15, ../sass/_breakpoints.scss */
+  /* line 21, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 22, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: fuchsia;
     font-size: 1em;
   }
 }
-/* Smartphones (portrait) ----------- */
+/* Smartphones (portrait) ----------- groen*/
 @media only screen and (max-width: 320px) {
   /* Styles */
-  /* line 22, ../sass/_breakpoints.scss */
+  /* line 29, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 30, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: lime;
     font-size: 1em;
@@ -92,16 +111,26 @@ table {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
-  /* line 30, ../sass/_breakpoints.scss */
+  /* line 38, ../sass/_breakpoints.scss */
+  body {
+    width: 768px;
+  }
+
+  /* line 39, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: maroon;
     font-size: 3em;
   }
 }
-/* iPads (landscape) ----------- */
+/* iPads (landscape) ----------- donker blauw*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
-  /* line 39, ../sass/_breakpoints.scss */
+  /* line 48, ../sass/_breakpoints.scss */
+  body {
+    width: 768px;
+  }
+
+  /* line 49, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: navy;
     font-size: 3em;
@@ -110,25 +139,40 @@ table {
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
-  /* line 48, ../sass/_breakpoints.scss */
+  /* line 58, ../sass/_breakpoints.scss */
+  body {
+    width: 768px;
+  }
+
+  /* line 59, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: olive;
     font-size: 3em;
   }
 }
-/* Desktops and laptops ----------- */
+/* Desktops and laptops ----------- paars*/
 @media only screen and (min-width: 1224px) {
   /* Styles */
-  /* line 55, ../sass/_breakpoints.scss */
+  /* line 66, ../sass/_breakpoints.scss */
+  body {
+    width: 1224px;
+  }
+
+  /* line 67, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: purple;
     font-size: 4em;
   }
 }
-/* Large screens ----------- */
+/* Large screens ----------- silver*/
 @media only screen and (min-width: 1824px) {
   /* Styles */
-  /* line 62, ../sass/_breakpoints.scss */
+  /* line 74, ../sass/_breakpoints.scss */
+  body {
+    width: 1824px;
+  }
+
+  /* line 75, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: silver;
     font-size: 6em;
@@ -137,7 +181,7 @@ table {
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  /* line 70, ../sass/_breakpoints.scss */
+  /* line 83, ../sass/_breakpoints.scss */
   #main_wrap {
     background-color: teal;
   }
