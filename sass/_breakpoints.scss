@@ -1,33 +1,38 @@
 /* 
 * max-width is the width of the target display area, e.g. the browser
 * max-device-width is the width of the device's entire rendering area, i.e. the actual device screen
+*
+* “em unit is equal to the computed value of ‘font-size’ property of the element on which it is used.”
+* “rem unit is equal to the computed value of ‘font-size’ on the root element.”
 */
 
 /*Background with the 17 standard colors*/
 
-/* Smartphones (portrait and landscape) ----------- */
+@mixin bp($k, $no){
+body{width: (320px * $no);}
+#main_wrap {background-color: $k; font-size: 1em * $no;}
+} 
+
+/* Smartphones (portrait and landscape) ----------- aqua/lichtblauw*/
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-body{width:320px;}
-#main_wrap {background-color: aqua; font-size: 1em;}
+@include bp(aque,1);
 }
 
-/* Smartphones (landscape) ----------- roze*/
+/* Smartphones (landscape) ----------- fuchsia/roze*/
 @media only screen 
 and (min-width : 321px) {
 /* Styles */
-body{width:320px;}
-#main_wrap {background-color: fuchsia; font-size: 1em;}
+@include bp(fuchsia,1);
 }
 
-/* Smartphones (portrait) ----------- groen*/
+/* Smartphones (portrait) ----------- lime/groen*/
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
-body {width:320px;}
-#main_wrap {background-color: lime;  font-size: 1em;}
+@include bp(lime,1);
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -35,50 +40,45 @@ body {width:320px;}
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-body {width:768px;}
-#main_wrap {background-color: maroon; font-size: 3em;}
+@include bp(maroon,3);
 }
 
-/* iPads (landscape) ----------- donker blauw*/
+/* iPads (landscape) ----------- navy/donkerblauw*/
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
 /* Styles */
-body {width:768px;}
-#main_wrap {background-color: navy; font-size: 3em;}
+@include bp(navy,3);
 }
 
-/* iPads (portrait) ----------- */
+/* iPads (portrait) ----------- olive/ */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
-body {width:768px;}
-#main_wrap {background-color: olive; font-size: 3em;}
+@include bp(olive,3);
 }
 
-/* Desktops and laptops ----------- paars*/
+/* Desktops and laptops ----------- purple/paars*/
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
-body{width:1224px; }
-#main_wrap {background-color: purple;  font-size: 4em;}
+@include bp(purple,4);
 }
 
-/* Large screens ----------- silver*/
+/* Large screens ----------- silver/zilver*/
 @media only screen 
 and (min-width:1824px) {
 /* Styles */
-body{width:1824px;}
-#main_wrap {background-color: silver; font-size: 6em;}
+@include bp(silver,6);
 }
 
-/* iPhone 4 ----------- */
+/* iPhone 4 ----------- teal/????*/
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
-#main_wrap {background-color: teal;}
+@include bp(red,1);
 }

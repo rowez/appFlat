@@ -1,3 +1,5 @@
+    @import 'normalize';
+    
     /**
     * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
     * http://cssreset.com
@@ -26,7 +28,7 @@
     article, aside, details, figcaption, figure,
     footer, header, hgroup, menu, nav, section {
     display: block;
-    }
+    }    
     body {
     line-height: 1;
     }

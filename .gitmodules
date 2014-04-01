@@ -22,3 +22,15 @@
 [submodule "github/ai"]
 	path = github/ai
 	url = https://github.com/MattWilcox/Adaptive-Images.git
+[submodule "github/coverflow"]
+	path = github/coverflow
+	url = git://github.com/coverflowjs/coverflow.git
+[submodule "sass/normalize.scss"]
+	path = sass/normalize.scss
+	url = https://github.com/kristerkari/normalize.scss.git
+[submodule "sass/normalize"]
+	path = sass/normalize
+	url = https://github.com/kristerkari/normalize.scss.git
+[submodule "github/html5reset"]
+	path = github/html5reset
+	url = https://github.com/murtaugh/HTML5-Reset.git

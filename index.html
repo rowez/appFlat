@@ -1,60 +1,127 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Appflat</title>
-    <meta name="description" content="wortel = root">
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Appflat : " />
-    <!-- Better not to use viewports! Why? -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" type="text/css" href="stylesheets/estyle.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="stylesheets/footable.standalone.css" media="screen"/>
-	<!--<link rel="stylesheet" type="text/css" href="stylesheets/jquery.mobile-1.4.2.min.css" media="screen">
-	--><script src="/appFlat/js/jquery-1.11.0.min.js"></script>
-	<script src="/appFlat/github/FooTable/js/footable.js"></script>
-	<script src="/appFlat/github/FooTable/js/footable.sort.js"></script>
-	<script src="/appFlat/github/cycle2/build/jquery.cycle2.js"></script>
-		<!--[if lt IE 9]>
-		<script src="/appFlat/js/respond.min.js"></script>
-		<script> src="http://html5shiv.googlecode.com/svn/trunk/html5.js"</script>
-		<![endif]-->
-	<!--<script src="/appFlat/js/jquery.mobile-1.4.2.min.js"></script>
-	--><!--<script src="/appFlat/js/modernizr-latest.js"></script>
-	--><script>
-		$(function () {
-		$('#footable').footable({
-    breakpoints: {
-        phone: 320,
-        tablet: 640,
-        big: 960
-		}});
-		});
-	</script>
-	<style>	</style>
-  </head>
-	<body><div id="main_wrap">
-		<div id="header_wrap" class="outer">
+<!doctype html>
+
+<!--
+HTML5 Reset: https://github.com/murtaugh/HTML5-Reset
+Free to use
+-->
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+<meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- Important stuff for SEO, don't neglect. (And don't dupicate values across your site!) -->
+<title>Appflat</title>
+<meta name="author" content="" />
+<meta name="description" content="appflat">
+<!-- Don't forget to set your site up: http://google.com/webmasters -->
+<meta name="google-site-verification" content="" />
+<!-- Who owns the content of this site? -->
+<meta name="Copyright" content="" />
+<!-- Better not to use viewports! Why? -->
+<!--  Mobile Viewport
+http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+device-width : Occupy full width of the screen in its current orientation
+initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width (wrong for most sites)
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- concatenate and minify for production -->
+<link rel="stylesheet" href="github/html5reset/assets/css/reset.css" />
+<link rel="stylesheet" href="github/html5reset/assets/css/style.css" />
+<!-- Lea Verou's Prefix Free, lets you use un-prefixed properties in your CSS files -->
+<script src="github/html5reset/Sassets/js/libs/prefixfree.min.js"></script>
+<!-- This is an un-minified, complete version of Modernizr. 
+Before you move to production, you should generate a custom build that only has the detects you need. -->
+<script src="github/html5reset/assets/js/libs/modernizr-2.7.1.dev.js"></script>
+<!-- Application-specific meta tags -->
+<!-- Windows 8: see http://msdn.microsoft.com/en-us/library/ie/dn255024%28v=vs.85%29.aspx for details -->
+<meta name="application-name" content="" /> 
+<meta name="msapplication-TileColor" content="" /> 
+<meta name="msapplication-TileImage" content="" />
+<meta name="msapplication-square150x150logo" content="" />
+<meta name="msapplication-square310x310logo" content="" />
+<meta name="msapplication-square70x70logo" content="" />
+<meta name="msapplication-wide310x150logo" content="" />
+<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
+<meta name="twitter:card" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:url" content="">
+<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+
+<!--<link rel="stylesheet" type="text/css" href="stylesheets/footable.standalone.css" media="screen">
+<script src="/appFlat/github/FooTable/js/footable.js"></script>
+<script src="/appFlat/github/FooTable/js/footable.sort.js"></script>
+-->
+
+<!--<link rel="stylesheet" type="text/css" href="stylesheets/estyle.css" media="screen">
+<link rel="stylesheet" type="text/css" href="stylesheets/jquery.mobile-1.4.2.min.css" media="screen">
+<script src="/appFlat/js/jquery-1.11.0.min.js"></script>
+<!--<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script src="/appFlat/github/cycle2/build/jquery.cycle2.js"></script>
+-->
+<!--[if lt IE 9]>
+<script src="/appFlat/js/respond.min.js"></script>
+<script> src="http://html5shiv.googlecode.com/svn/trunk/html5.js"</script>
+<![endif]-->
+<!--<script src="/appFlat/js/jquery.mobile-1.4.2.min.js"></script>
+--><!--<script src="/appFlat/js/modernizr-latest.js"></script>
+<script>
+$(function () {
+$('#footable').footable({
+breakpoints: {
+phone: 320,
+tablet: 640,
+big: 960
+}});
+});
+</script>
+-->
+<style>	</style>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div id="main_wrap">
+<div id="header_wrap" class="outer">
 <header class="inner">
-<div id="menu_wrap">  <!-- menu main -->
+<section>
+<div id="menu_wrap">
 <ul>
 <li class="cols-3"><a href="zien/thuis">Thuis</a></li>
 <li class="cols-3"><a href="zien/rowez">Rowez</a></li>
 <li class="cols-3"><a href="zien/over">Over</a></li>
 </ul>
-</div>
+</div>  <!-- menu wrap -->
+</section>
 <img src="images/2560_4320x3240_IMG_4462.JPG">
 <!-- <a id="forkme_banner" href="https://github.com/rowez/appFlat">View on GitHub</a>
 -->
 </header>
-		</div>
-<div id="slideshow_wrap"> <!-- declare a slideshow -->
+</div> <!-- header wrap -->
+<div id="slideshow_wrap">
 <div class="cycle-slideshow">
 <img src="images/477x306_betuwelijndoordebocht.jpg">
 <img src="images/259x149_rijn.jpeg">
 <img src="images/259x194_bomen-bloesem.jpeg">
-</div>
-</div>
+</div> <!-- cycle slideshow -->
+</div> <!-- slideshow wrap -->
 
 <figure>
 <img src="images/960_4320x3240_IMG_4462.JPG" 
@@ -64,88 +131,96 @@ srcset="images/320_4320x3240_IMG_4462.JPG 480w, images/480_4320x3240_IMG_4462.JP
 <figcaption>Roerdomp, 2013</figcaption>
 </figure>
 
-<div id="menu_wrap"> <!-- menu divers -->
+<div id="menu_wrap">
 <ul> 
-<li class="cols-2"><a href="handboek.html"><marquee>Handboek (NL) Handboek (NL) Handboek (NL) Handboek (NL)</marquee></a></li>
-<li class="cols-2"><a href="index-gh-page.html">GitHub page</a></li>
+<li class="cols-4"><marquee><a href="handboek.html">Handboek (NL) 2014</a></marquee></li>
+<li class="cols-4"><a href="boek.html">Boek (NL) 2014</a></li>
+<li class="cols-4"><a href="scrift.html">Scrift (NL) 2014</a></li>
+<li class="cols-4"><a href="index-gh-page.html">GitHub page</a></li>
 </ul>
-</div>
-		<div id="sidebar_left_wrap" class="sidebar">
-		</div>
-		<div id="main_content_wrap" class="outer">
-		  <section id="main_content" class="inner">
-			  <img src="images/580x200_uiterwaardondergelopen.jpg">
-		  </section>
-		</div>
-<hr>		  
+</div> <!-- menu wrap -->
+
+<div id="sidebar_left_wrap" class="sidebar">
+<ul> 
+<li class="cols-1"><marquee><a href="handboek.html">Handboek (NL) 2014</a></marquee></li>
+<li class="cols-1"><a href="boek.html">Boek (NL) 2014</a></li>
+<li class="cols-1"><a href="scrift.html">Scrift (NL) 2014</a></li>
+<li class="cols-1"><a href="index-gh-page.html">GitHub page</a></li>
+</ul>
+</div> <!-- sidebar left wrap -->
+<div id="main_content_wrap" class="outer">
+<section id="main_content" class="inner">
+<img src="images/580x200_uiterwaardondergelopen.jpg">
+</section>
+</div> <!-- main content wrap -->
+
 <div id="table_wrap">
-	<!-- http://css-tricks.com/footable-a-jquery-plugin-for-responsive-data-tables/ -->
-    <table id="footable" data-filter="#filter">
-		<caption>Table responsive?</caption>
-      <thead>
-        <tr>
-		  <th data-sort-initial="ascending" data-class="expand">Small</th>
-          <th data-hide="all" data-type="numeric">CustomerID</th>
-          <th data-sort-ignore="true">CustomerName</th>
-          <th>ContactName</th>
-          <th data-hide="phone">Address</th>
-          <th data-hide="table">City</th>
-          <th data-hide="table">PostalCode</th>
-          <th data-hide="table">Country</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-		  <td>Alfreds</td>
-          <td>1</td>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Obere Str. 57</td>
-          <td>Berlin</td>
-          <td>12209</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-		  <td>Antonio</td>
-          <td>2</td>
-          <td>Antonio Moreno Taquería</td>
-          <td>Antonio Moreno</td>
-          <td>Mataderos 2312</td>
-          <td>México D.F.</td>
-          <td>05023</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-		  <td>Horn</td>
-          <td>3</td>
-          <td>Around the Horn</td>
-          <td>Thomas Hardy</td>
-          <td>120 Hanover Sq.</td>
-          <td>London</td>
-          <td>WA1 1DP</td>
-          <td>UK</td>
-        </tr>
-        <tr>
-		  <td>Berglunds</td>
-          <td>4</td>
-          <td>Berglunds snabbköp</td>
-          <td>Christina Berglund</td>
-          <td>Berguvsvägen 8</td>
-          <td>Luleå</td>
-          <td>S-958 22</td>
-          <td>Sweden</td>
-        </tr>
-      </tbody>
-    </table>
-</div>
+<!-- http://css-tricks.com/footable-a-jquery-plugin-for-responsive-data-tables/ -->
+<table id="footable" data-filter="#filter">
+<caption>Table responsive?</caption>
+<thead>
+<tr>
+<th data-sort-initial="ascending" data-class="expand">Small</th>
+<th data-hide="all" data-type="numeric">CustomerID</th>
+<th data-sort-ignore="true">CustomerName</th>
+<th>ContactName</th>
+<th data-hide="phone">Address</th>
+<th data-hide="table">City</th>
+<th data-hide="table">PostalCode</th>
+<th data-hide="table">Country</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alfreds</td>
+<td>1</td>
+<td>Alfreds Futterkiste</td>
+<td>Maria Anders</td>
+<td>Obere Str. 57</td>
+<td>Berlin</td>
+<td>12209</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>Antonio</td>
+<td>2</td>
+<td>Antonio Moreno Taquería</td>
+<td>Antonio Moreno</td>
+<td>Mataderos 2312</td>
+<td>México D.F.</td>
+<td>05023</td>
+<td>Mexico</td>
+</tr>
+<tr>
+<td>Horn</td>
+<td>3</td>
+<td>Around the Horn</td>
+<td>Thomas Hardy</td>
+<td>120 Hanover Sq.</td>
+<td>London</td>
+<td>WA1 1DP</td>
+<td>UK</td>
+</tr>
+<tr>
+<td>Berglunds</td>
+<td>4</td>
+<td>Berglunds snabbköp</td>
+<td>Christina Berglund</td>
+<td>Berguvsvägen 8</td>
+<td>Luleå</td>
+<td>S-958 22</td>
+<td>Sweden</td>
+</tr>
+</tbody>
+</table>
+</div> <!-- table wrap -->
 
 <div id="ace_wrap">
-
-</div>
-
+</div> <!-- ace wrap -->
 
 <div id="footer_wrap" class="outer">
-		  <footer class="inner">
-		  </footer>
-		</div>
-	</div></body></html>
+<footer class="inner">
+</footer>
+</div><!-- footer wrap -->
+</div> <!-- main wrap -->
+</body></html>

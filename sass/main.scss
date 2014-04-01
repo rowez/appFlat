@@ -1,122 +1,22 @@
-/*Style reset by Eric Meyer*/
-@import 'reset';
-
-/*Personal style*/
 @import 'colors';
-@import 'custom';
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    box-sizing:         border-box;
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
 }
 
-@import 'breakpoints';
-
-$i: 10;
-@while $i > 0 {
-  .cols-#{$i} {  width: 100% / $i; }
-  $i: $i - 1;
+html {
+    font-size: 1em;
+    line-height: 1.4;
 }
 
-.cols-1 {background-color: red; float: left;}
-.cols-2 {background-color: yellow; float: right;}
-
-.floated{
-    float: left;
-    width: 50%;
-}
-
-.container {
-	width: 800px;
-	max-width: 90%;
-}
-
-#main_wrap {
-}
-
-#header_wrap { 
-display: standard;
-	@extend .c2;	
-	.inner {}
-	.outer {}
-}
-
-#slideshow_wrap {
-	display: standard;
-}
-
-#menu_wrap {
-	display: standard;
-	@extend .c5;
-	a {text-decoration: none;}
-	li {float: left; text-align: center;}
-}
-
-.sidebar {
-display: standard;
-}
-
-#sidebar_left_wrap {
-display: standard;
-@extend .c2;
-}
-
-#main_content_wrap {
-display: standard;
-}
-
-#table_wrap {
-display: standard;
-}
-
-#ace_wrap {
-	@extend .c1;
-}
-
-#editor {
-	position: absolute;
-	width: 98%;
-	height: 80%;
-}
-
-#footer_wrap {
-display: standard;
-}
-
-img, object {
-	max-width: 99.6%;
-	height: auto;
-	; /* for IE*/
-	margin: 0.2%;
-}
-
-@media \0screen {
-  img { 
-  	width: auto; /* for ie 8 */
-  }
-}
-
-.video {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-}
-
-.video iframe,  
-.video object,  
-.video embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.break-word {
-		word-wrap: break-word;
-}
+/* ::-moz-selection ::selection are not production ready
+ * /
 
 hr {
     display: block;
@@ -150,6 +50,10 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
