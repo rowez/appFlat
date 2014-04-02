@@ -38,6 +38,8 @@ maximum-scale = 1.0 retains dimensions instead of zooming in if page width < dev
 <!-- concatenate and minify for production -->
 <link rel="stylesheet" href="github/html5reset/assets/css/reset.css" />
 <link rel="stylesheet" href="github/html5reset/assets/css/style.css" />
+<!-- Cursor reset override html5reset resec.css -->
+<link rel="stylesheet" href="github/cursor-reset/cursor-reset.css" />
 <!-- Lea Verou's Prefix Free, lets you use un-prefixed properties in your CSS files -->
 <script src="github/html5reset/Sassets/js/libs/prefixfree.min.js"></script>
 <!-- This is an un-minified, complete version of Modernizr. 
@@ -64,10 +66,9 @@ Before you move to production, you should generate a custom build that only has 
 <meta property="og:url" content="" />
 <meta property="og:image" content="" />
 
-<!--<link rel="stylesheet" type="text/css" href="stylesheets/footable.standalone.css" media="screen">
+<link rel="stylesheet" type="text/css" href="stylesheets/footable.standalone.css" media="screen">
 <script src="/appFlat/github/FooTable/js/footable.js"></script>
 <script src="/appFlat/github/FooTable/js/footable.sort.js"></script>
--->
 
 <!--<link rel="stylesheet" type="text/css" href="stylesheets/estyle.css" media="screen">
 <link rel="stylesheet" type="text/css" href="stylesheets/jquery.mobile-1.4.2.min.css" media="screen">
@@ -80,22 +81,26 @@ Before you move to production, you should generate a custom build that only has 
 <script> src="http://html5shiv.googlecode.com/svn/trunk/html5.js"</script>
 <![endif]-->
 <!--<script src="/appFlat/js/jquery.mobile-1.4.2.min.js"></script>
---><!--<script src="/appFlat/js/modernizr-latest.js"></script>
+<script src="/appFlat/js/modernizr-latest.js"></script>
+-->
 <script>
 $(function () {
 $('#footable').footable({
 breakpoints: {
 phone: 320,
-tablet: 640,
-big: 960
+phone6360,
+tablet: 768,
+tablet1: 800,
+tablet2: 980,
+big: 1280,
+big1: 1920,
 }});
 });
 </script>
--->
+<link rel="stylesheet" href="stylesheets/custom.css" />
 <style>	</style>
 </head>
-<body>
-<!--[if lt IE 7]>
+<body><!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <div id="main_wrap">
@@ -113,6 +118,17 @@ big: 960
 <img src="images/2560_4320x3240_IMG_4462.JPG">
 <!-- <a id="forkme_banner" href="https://github.com/rowez/appFlat">View on GitHub</a>
 -->
+<h1><a href="files">Page Title</a></h1>
+
+<nav>
+
+<ol>
+<li><a href="">Nav Link 1</a></li>
+<li><a href="">Nav Link 2</a></li>
+<li><a href="">Nav Link 3</a></li>
+</ol>
+
+</nav>
 </header>
 </div> <!-- header wrap -->
 <div id="slideshow_wrap">
@@ -214,12 +230,23 @@ srcset="images/320_4320x3240_IMG_4462.JPG 480w, images/480_4320x3240_IMG_4462.JP
 </tbody>
 </table>
 </div> <!-- table wrap -->
-
+<code>sakjfhalwiefhaiwehfakbdc</code>
 <div id="ace_wrap">
 </div> <!-- ace wrap -->
-
+<article>
+<h1 href="/">Article Header</h1>
+<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+<h2>Article Subhead</h2>
+<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
+</article>
+<aside>
+<h6>Sidebar Content</h6>
+</aside>
+<textarea>slkfuahser fkhvsrlkf cfslrbfccrcjbfgbfres cjbzdfb vjbzc</textarea>
+<input>blalasdlfadskfjlwejfl</input>
 <div id="footer_wrap" class="outer">
 <footer class="inner">
+<p><small>&copy; Copyright Your Name Here 2013. All Rights Reserved.</small></p>
 </footer>
 </div><!-- footer wrap -->
 </div> <!-- main wrap -->

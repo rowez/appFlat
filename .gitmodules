@@ -34,3 +34,6 @@
 [submodule "github/html5reset"]
 	path = github/html5reset
 	url = https://github.com/murtaugh/HTML5-Reset.git
+[submodule "github/cursor-reset"]
+	path = github/cursor-reset
+	url = https://gist.github.com/5247154.git

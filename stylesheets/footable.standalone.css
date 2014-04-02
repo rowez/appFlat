@@ -57,9 +57,10 @@
   -webkit-border-radius: 6px;
   border-radius: 6px;
   font-family: 'trebuchet MS', 'Lucida sans', Arial;
+  font-size: 1em;
 }
 
-/* line 14, ../sass/footable.standalone.scss */
+/* line 15, ../sass/footable.standalone.scss */
 .footable > thead > tr:first-child > th.footable-first-column,
 .footable > thead > tr:first-child > td.footable-first-column {
   -moz-border-radius: 6px 0 0 0;
@@ -67,7 +68,7 @@
   border-radius: 6px 0 0 0;
 }
 
-/* line 20, ../sass/footable.standalone.scss */
+/* line 21, ../sass/footable.standalone.scss */
 .footable > thead > tr:first-child > th.footable-last-column,
 .footable > thead > tr:first-child > td.footable-last-column {
   -moz-border-radius: 0 6px 0 0;
@@ -75,7 +76,7 @@
   border-radius: 0 6px 0 0;
 }
 
-/* line 26, ../sass/footable.standalone.scss */
+/* line 27, ../sass/footable.standalone.scss */
 .footable > thead > tr:first-child > th.footable-first-column.footable-last-column,
 .footable > thead > tr:first-child > td.footable-first-column.footable-last-column {
   -moz-border-radius: 6px 6px 0 0;
@@ -83,7 +84,7 @@
   border-radius: 6px 6px 0 0;
 }
 
-/* line 31, ../sass/footable.standalone.scss */
+/* line 32, ../sass/footable.standalone.scss */
 .footable > thead > tr > th {
   border-left: 1px solid;
   border-top: 1px solid;
@@ -91,7 +92,7 @@
   text-align: left;
 }
 
-/* line 38, ../sass/footable.standalone.scss */
+/* line 39, ../sass/footable.standalone.scss */
 .footable > thead > tr > th,
 .footable > thead > tr > td {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
@@ -107,44 +108,44 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-/* line 53, ../sass/footable.standalone.scss */
+/* line 54, ../sass/footable.standalone.scss */
 .footable > thead > tr > th.footable-first-column,
 .footable > thead > tr > td.footable-first-column {
   border-left: none;
 }
 
-/* line 59, ../sass/footable.standalone.scss */
+/* line 60, ../sass/footable.standalone.scss */
 .footable.breakpoint > tbody > tr.footable-row-detail > .footable-row-detail-cell {
   border-left: none;
 }
 
-/* line 62, ../sass/footable.standalone.scss */
+/* line 63, ../sass/footable.standalone.scss */
 .footable > tbody img {
   vertical-align: middle;
 }
 
-/* line 68, ../sass/footable.standalone.scss */
+/* line 69, ../sass/footable.standalone.scss */
 .footable > tbody > tr:last-child > td.footable-first-column {
   -moz-border-radius: 0 0 0 6px;
   -webkit-border-radius: 0 0 0 6px;
   border-radius: 0 0 0 6px;
 }
 
-/* line 73, ../sass/footable.standalone.scss */
+/* line 74, ../sass/footable.standalone.scss */
 .footable > tbody > tr:last-child > td.footable-last-column {
   -moz-border-radius: 0 0 6px 0;
   -webkit-border-radius: 0 0 6px 0;
   border-radius: 0 0 6px 0;
 }
 
-/* line 78, ../sass/footable.standalone.scss */
+/* line 79, ../sass/footable.standalone.scss */
 .footable > tbody > tr:last-child > td.footable-first-column.footable-last-column {
   -moz-border-radius: 0 0 6px 6px;
   -webkit-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
 }
 
-/* line 83, ../sass/footable.standalone.scss */
+/* line 84, ../sass/footable.standalone.scss */
 .footable > tbody > tr > td {
   border-top: 1px solid #cccccc;
   border-left: 1px solid #cccccc;
@@ -152,12 +153,12 @@
   text-align: left;
 }
 
-/* line 89, ../sass/footable.standalone.scss */
+/* line 90, ../sass/footable.standalone.scss */
 .footable > tbody > tr > td.footable-first-column {
   border-left: none;
 }
 
-/* line 93, ../sass/footable.standalone.scss */
+/* line 94, ../sass/footable.standalone.scss */
 .footable > tfoot > tr > th,
 .footable > tfoot > tr > td {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
@@ -174,12 +175,12 @@
   padding: 10px;
 }
 
-/* line 108, ../sass/footable.standalone.scss */
+/* line 109, ../sass/footable.standalone.scss */
 .footable .pagination {
   margin: 20px 0;
 }
 
-/* line 111, ../sass/footable.standalone.scss */
+/* line 112, ../sass/footable.standalone.scss */
 .footable .pagination > ul {
   display: inline-block;
   margin: 0;
@@ -192,12 +193,12 @@
   box-shadow: none;
 }
 
-/* line 123, ../sass/footable.standalone.scss */
+/* line 124, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li {
   display: inline;
 }
 
-/* line 127, ../sass/footable.standalone.scss */
+/* line 128, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li > a,
 .footable .pagination > ul > li > span {
   float: left;
@@ -208,7 +209,7 @@
   border-left-width: 0;
 }
 
-/* line 136, ../sass/footable.standalone.scss */
+/* line 137, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li:first-child > a,
 .footable .pagination > ul > li:first-child > span {
   -webkit-border-bottom-left-radius: 4px;
@@ -220,7 +221,7 @@
   border-left-width: 1px;
 }
 
-/* line 146, ../sass/footable.standalone.scss */
+/* line 147, ../sass/footable.standalone.scss */
 .footable .pagination > ul > li:last-child > a,
 .footable .pagination > ul > li:last-child > span {
   -webkit-border-top-right-radius: 4px;
@@ -231,13 +232,13 @@
   border-bottom-right-radius: 4px;
 }
 
-/* line 161, ../sass/footable.standalone.scss */
+/* line 162, ../sass/footable.standalone.scss */
 .footable .pagination > ul > .active > a,
 .footable .pagination > ul > .active > span {
   cursor: default;
 }
 
-/* line 168, ../sass/footable.standalone.scss */
+/* line 169, ../sass/footable.standalone.scss */
 .footable .pagination > ul > .disabled > span,
 .footable .pagination > ul > .disabled > a,
 .footable .pagination > ul > .disabled > a:hover,
@@ -245,12 +246,12 @@
   cursor: default;
 }
 
-/* line 172, ../sass/footable.standalone.scss */
+/* line 173, ../sass/footable.standalone.scss */
 .footable .pagination.pagination-centered {
   text-align: center;
 }
 
-/* line 175, ../sass/footable.standalone.scss */
+/* line 176, ../sass/footable.standalone.scss */
 .footable .pagination.pagination-right {
   text-align: center;
 }
