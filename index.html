@@ -40,6 +40,7 @@ maximum-scale = 1.0 retains dimensions instead of zooming in if page width < dev
 <link rel="stylesheet" href="github/html5reset/assets/css/style.css" />
 <!-- Cursor reset override html5reset resec.css -->
 <link rel="stylesheet" href="github/cursor-reset/cursor-reset.css" />
+<script src="/appFlat/js/jquery-1.11.0.min.js"></script>
 <!-- Lea Verou's Prefix Free, lets you use un-prefixed properties in your CSS files -->
 <script src="github/html5reset/Sassets/js/libs/prefixfree.min.js"></script>
 <!-- This is an un-minified, complete version of Modernizr. 
@@ -66,15 +67,19 @@ Before you move to production, you should generate a custom build that only has 
 <meta property="og:url" content="" />
 <meta property="og:image" content="" />
 
-<link rel="stylesheet" type="text/css" href="stylesheets/footable.standalone.css" media="screen">
+<link rel="stylesheet" type="text/css" href="github/FooTable/css/footable.core.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="github/FooTable/css/footable.standalone.min.css" media="screen">
 <script src="/appFlat/github/FooTable/js/footable.js"></script>
 <script src="/appFlat/github/FooTable/js/footable.sort.js"></script>
+<script src="/appFlat/github/FooTable/js/footable.filter.js"></script>
+<script src="/appFlat/github/FooTable/js/footable.paginate.js"></script>
+<script src="/appFlat/github/FooTable/js/footable.striping.js"></script>
+
+<script src="/appFlat/github/cycle2/build/jquery.cycle2.js"></script>
 
 <!--<link rel="stylesheet" type="text/css" href="stylesheets/estyle.css" media="screen">
 <link rel="stylesheet" type="text/css" href="stylesheets/jquery.mobile-1.4.2.min.css" media="screen">
-<script src="/appFlat/js/jquery-1.11.0.min.js"></script>
 <!--<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-<script src="/appFlat/github/cycle2/build/jquery.cycle2.js"></script>
 -->
 <!--[if lt IE 9]>
 <script src="/appFlat/js/respond.min.js"></script>
@@ -83,18 +88,22 @@ Before you move to production, you should generate a custom build that only has 
 <!--<script src="/appFlat/js/jquery.mobile-1.4.2.min.js"></script>
 <script src="/appFlat/js/modernizr-latest.js"></script>
 -->
-<script>
+<script type="text/javascript">
 $(function () {
-$('#footable').footable({
+$('.footable').footable({
 breakpoints: {
-phone: 320,
-phone6360,
+phone: 360,
 tablet: 768,
-tablet1: 800,
-tablet2: 980,
-big: 1280,
-big1: 1920,
-}});
+desktop: 1280
+}
+});
+$('table').trigger('footable_expand_first_row');
+<!--$('table').trigger('footable_expand_all');
+-->
+<!--$('table').trigger('footable_collapse_all');
+-->
+$('table').trigger('footable_collapse_all').trigger('footable_redraw');
+$('table').trigger('footable_clear_filter');
 });
 </script>
 <link rel="stylesheet" href="stylesheets/custom.css" />
@@ -109,9 +118,9 @@ big1: 1920,
 <section>
 <div id="menu_wrap">
 <ul>
-<li class="cols-3"><a href="zien/thuis">Thuis</a></li>
-<li class="cols-3"><a href="zien/rowez">Rowez</a></li>
-<li class="cols-3"><a href="zien/over">Over</a></li>
+<li class="cols-3"><h1><a href="zien/thuis">Thuis</a></h1></li>
+<li class="cols-3"><h1><a href="zien/rowez">Rowez</a></h1></li>
+<li class="cols-3"><h1><a href="zien/over">Over</a></h1></li>
 </ul>
 </div>  <!-- menu wrap -->
 </section>
@@ -131,6 +140,90 @@ big1: 1920,
 </nav>
 </header>
 </div> <!-- header wrap -->
+<div id="table_wrap">
+<!-- http://css-tricks.com/footable-a-jquery-plugin-for-responsive-data-tables/ -->
+<p>
+Search: <input id="filter" type="text">
+Status: <select class="filter-status">
+<option></option>
+<option value="1">Active</option>
+<option value="2">Disabled</option>
+<option value="3">Suspended</option></option>
+</select>
+<a href="#clear" class="clear-filter" title="clear filter">[clear]</a>
+<a href="#api" class="filter-api" title="Filter using the Filter API">[filter API]</a>
+</p>      
+<table id="footable" class="footable table toggle-arrow-tiny" data-page-size="4" data-page-navigation=".pagination" data-filter="#filter" data-sort="true" data-filter-minimum="3" data-filter-text-only="true">
+<caption>Table responsive?</caption>
+<thead>
+<tr>
+<th data-sort-initial="ascending" data-class="expand" data-name="Roepnaam">Small</th>
+<th data-ignore="true" data-hide="all" data-type="numeric">CustomerID</th>
+<th data-sort-ignore="true">CustomerName</th>
+<th>ContactName</th>
+<th data-hide="phone">Address</th>
+<th data-hide="phone, tablet">City</th>
+<th data-hide="phone, tablet, desktop">PostalCode</th>
+<th data-hide="">Country</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alfreds</td>
+<td>1</td>
+<td>Alfreds Futterkiste</td>
+<td>Maria Anders</td>
+<td>Obere Str. 57</td>
+<td>Berlin</td>
+<td>12209</td>
+<td>Germany</td>
+<td data-value="1"></td>
+</tr>
+<tr>
+<td>Antonio</td>
+<td>2</td>
+<td>Antonio Moreno Taquería</td>
+<td>Antonio Moreno</td>
+<td>Mataderos 2312</td>
+<td>México D.F.</td>
+<td>05023</td>
+<td>Mexico</td>
+<td data-value="2"></td>
+</tr>
+<tr>
+<td>Horn</td>
+<td>3</td>
+<td>Around the Horn</td>
+<td>Thomas Hardy</td>
+<td>120 Hanover Sq.</td>
+<td>London</td>
+<td>WA1 1DP</td>
+<td>UK</td>
+<td data-value="1"></td>
+</tr>
+<tr>
+<td>Berglunds</td>
+<td>4</td>
+<td>Berglunds snabbköp</td>
+<td>Christina Berglund</td>
+<td>Berguvsvägen 8</td>
+<td>Luleå</td>
+<td>S-958 22</td>
+<td>Sweden</td>
+<td data-value="3"></td>
+</tr>
+</tbody>
+<tfoot class="hide-if-no-paging">
+<tr>
+<td colspan="5">
+<div class="pagination pagination-centered hide-if-no-paging"></div>
+</td>
+</tr>
+</tfoot>
+</table>
+</div> <!-- table wrap -->
+
 <div id="slideshow_wrap">
 <div class="cycle-slideshow">
 <img src="images/477x306_betuwelijndoordebocht.jpg">
@@ -170,66 +263,6 @@ srcset="images/320_4320x3240_IMG_4462.JPG 480w, images/480_4320x3240_IMG_4462.JP
 </section>
 </div> <!-- main content wrap -->
 
-<div id="table_wrap">
-<!-- http://css-tricks.com/footable-a-jquery-plugin-for-responsive-data-tables/ -->
-<table id="footable" data-filter="#filter">
-<caption>Table responsive?</caption>
-<thead>
-<tr>
-<th data-sort-initial="ascending" data-class="expand">Small</th>
-<th data-hide="all" data-type="numeric">CustomerID</th>
-<th data-sort-ignore="true">CustomerName</th>
-<th>ContactName</th>
-<th data-hide="phone">Address</th>
-<th data-hide="table">City</th>
-<th data-hide="table">PostalCode</th>
-<th data-hide="table">Country</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Alfreds</td>
-<td>1</td>
-<td>Alfreds Futterkiste</td>
-<td>Maria Anders</td>
-<td>Obere Str. 57</td>
-<td>Berlin</td>
-<td>12209</td>
-<td>Germany</td>
-</tr>
-<tr>
-<td>Antonio</td>
-<td>2</td>
-<td>Antonio Moreno Taquería</td>
-<td>Antonio Moreno</td>
-<td>Mataderos 2312</td>
-<td>México D.F.</td>
-<td>05023</td>
-<td>Mexico</td>
-</tr>
-<tr>
-<td>Horn</td>
-<td>3</td>
-<td>Around the Horn</td>
-<td>Thomas Hardy</td>
-<td>120 Hanover Sq.</td>
-<td>London</td>
-<td>WA1 1DP</td>
-<td>UK</td>
-</tr>
-<tr>
-<td>Berglunds</td>
-<td>4</td>
-<td>Berglunds snabbköp</td>
-<td>Christina Berglund</td>
-<td>Berguvsvägen 8</td>
-<td>Luleå</td>
-<td>S-958 22</td>
-<td>Sweden</td>
-</tr>
-</tbody>
-</table>
-</div> <!-- table wrap -->
 <code>sakjfhalwiefhaiwehfakbdc</code>
 <div id="ace_wrap">
 </div> <!-- ace wrap -->

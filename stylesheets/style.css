@@ -1,68 +1,964 @@
-/*
-Syntax error: File to import not found or unreadable: normalize.
-              Load paths:
-                /var/www/appFlat/sass
-                /var/lib/gems/1.9.1/gems/compass-0.12.3/frameworks/blueprint/stylesheets
-                /var/lib/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 1 of /var/www/appFlat/sass/_reset.scss
-        from line 2 of /var/www/appFlat/sass/style.scss
+@charset "UTF-8";
+/*Style reset by Eric Meyer*/
+/* line 55, ../sass/normalize/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
 
-1: /var/www/appFlat/sass/style.scss
+/* line 63, ../sass/normalize/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
 
-Backtrace:
-/var/www/appFlat/sass/_reset.scss:1
-/var/www/appFlat/sass/style.scss:2
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/import_node.rb:45:in `import'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/import_node.rb:28:in `imported_file'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/import_node.rb:37:in `css_import?'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:139:in `block in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/logger.rb:45:in `red'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:138:in `compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:118:in `compile_if_required'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `each'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `block in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:100:in `run'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:147:in `recompile'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:68:in `perform'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-0.12.3/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
-*/
-body:before {
+/* line 74, ../sass/normalize/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 84, ../sass/normalize/_normalize.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 97, ../sass/normalize/_normalize.scss */
+html {
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 113, ../sass/normalize/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 119, ../sass/normalize/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 132, ../sass/normalize/_normalize.scss */
+a {
+  background: transparent;
+}
+/* line 139, ../sass/normalize/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 146, ../sass/normalize/_normalize.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 159, ../sass/normalize/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 164, ../sass/normalize/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 169, ../sass/normalize/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 174, ../sass/normalize/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 179, ../sass/normalize/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 184, ../sass/normalize/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 192, ../sass/normalize/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 199, ../sass/normalize/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 211, ../sass/normalize/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 217, ../sass/normalize/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 236, ../sass/normalize/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 246, ../sass/normalize/_normalize.scss */
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: normalize.\A               Load paths:\A                 /var/www/appFlat/sass\A                 /var/lib/gems/1.9.1/gems/compass-0.12.3/frameworks/blueprint/stylesheets\A                 /var/lib/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of /var/www/appFlat/sass/_reset.scss\A         from line 2 of /var/www/appFlat/sass/style.scss\A \A 1: /var/www/appFlat/sass/style.scss"; }
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 254, ../sass/normalize/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 270, ../sass/normalize/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 277, ../sass/normalize/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 285, ../sass/normalize/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 292, ../sass/normalize/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 296, ../sass/normalize/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 348, ../sass/normalize/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 357, ../sass/normalize/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 367, ../sass/normalize/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 384, ../sass/normalize/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 395, ../sass/normalize/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 412, ../sass/normalize/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* line 425, ../sass/normalize/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 435, ../sass/normalize/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 450, ../sass/normalize/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 461, ../sass/normalize/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 471, ../sass/normalize/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 483, ../sass/normalize/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 494, ../sass/normalize/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 502, ../sass/normalize/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 511, ../sass/normalize/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 522, ../sass/normalize/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+/* line 19, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 29, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 38, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 46, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Personal style*/
+/* 
+* max-width is the width of the target display area, e.g. the browser
+* max-device-width is the width of the device's entire rendering area, i.e. the actual device screen
+*
+* “em unit is equal to the computed value of ‘font-size’ property of the element on which it is used.”
+* “rem unit is equal to the computed value of ‘font-size’ on the root element.”
+*/
+/*Background with the 17 standard colors*/
+/* Smartphones (portrait and landscape) ----------- aqua/lichtblauw*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: aque;
+    font-size: 1em;
+  }
+}
+/* Smartphones (landscape) ----------- fuchsia/roze*/
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: magenta;
+    font-size: 1em;
+  }
+}
+/* Smartphones (portrait) ----------- lime/groen*/
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: lime;
+    font-size: 1em;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 960px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: maroon;
+    font-size: 3em;
+  }
+}
+/* iPads (landscape) ----------- navy/donkerblauw*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 960px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: navy;
+    font-size: 3em;
+  }
+}
+/* iPads (portrait) ----------- olive/ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 960px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: olive;
+    font-size: 3em;
+  }
+}
+/* Desktops and laptops ----------- purple/paars*/
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 1280px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: purple;
+    font-size: 4em;
+  }
+}
+/* Large screens ----------- silver/zilver*/
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 1920px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: silver;
+    font-size: 6em;
+  }
+}
+/* iPhone 4 ----------- teal/????*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+  /* line 12, ../sass/_breakpoints.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 13, ../sass/_breakpoints.scss */
+  #main_wrap {
+    background-color: red;
+    font-size: 1em;
+  }
+}
+/* line 1, ../sass/_colors.scss */
+.c1, a, footer a {
+  background-color: #3d5c99;
+  /*#3D5C99*/
+  color: #FFFFA3;
+  border-color: #FFFFA3;
+}
+
+/* line 6, ../sass/_colors.scss */
+.c2, form {
+  background-color: #527acc;
+  /*#527ACC*/
+  color: #FFFF85;
+}
+
+/* line 10, ../sass/_colors.scss */
+.c3, h1, h2, h3, h4, h5, h6, footer adress p {
+  background-color: #6699ff;
+  /*#6699FF*/
+  color: #FFFF66;
+  border-color: #FFFF66;
+}
+
+/* line 15, ../sass/_colors.scss */
+.c4, footer adress, pre, code, adress {
+  background-color: #85ADFF;
+  color: #CCCC52;
+}
+
+/* line 19, ../sass/_colors.scss */
+.c5, table {
+  background-color: #A3C2FF;
+  color: #99993D;
+}
+
+/* line 23, ../sass/_colors.scss */
+.cf {
+  background-color: lightgreen;
+  color: green;
+  border-color: green;
+}
+
+/* 
+* max-width is the width of the target display area, e.g. the browser
+* max-device-width is the width of the device's entire rendering area, i.e. the actual device screen
+*
+* “em unit is equal to the computed value of ‘font-size’ property of the element on which it is used.”
+* “rem unit is equal to the computed value of ‘font-size’ on the root element.”
+*/
+/*Background with the 17 standard colors*/
+/* Smartphones (portrait and landscape) ----------- aqua/lichtblauw*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: cyan;
+    font-size: 3em;
+  }
+}
+/* Smartphones (landscape) ----------- fuchsia/roze*/
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: magenta;
+    font-size: 3em;
+  }
+}
+/* Smartphones (portrait) ----------- lime/groen*/
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: lime;
+    font-size: 3em;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: maroon;
+    font-size: 4em;
+  }
+}
+/* iPads (landscape) ----------- navy/donkerblauw*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: navy;
+    font-size: 4em;
+  }
+}
+/* iPads (portrait) ----------- olive/ donkergroen*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: olive;
+    font-size: 3em;
+  }
+}
+/* Desktops and laptops ----------- purple/paars*/
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: purple;
+    font-size: 3em;
+  }
+}
+/* Large screens ----------- silver/zilver*/
+@media only screen and (min-width: 1920px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: silver;
+    font-size: 3em;
+  }
+}
+/* iPhone 4 ----------- teal/????*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: teal;
+    font-size: 1em;
+  }
+}
+/* Print styles
+-------------------------------------------------------------------------------*/
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+/* line 13, ../sass/style.scss */
+body {
+  box-sizing: border-box;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url("../images/1600x1200_lammeren.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* line 26, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+/* line 34, ../sass/style.scss */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* line 39, ../sass/style.scss */
+h2 {
+  padding-bottom: 10px;
+  font-size: 32px;
+  background: url("../images/bg_hr.png") repeat-x bottom;
+}
+
+/* line 45, ../sass/style.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 49, ../sass/style.scss */
+h4 {
+  font-size: 21px;
+}
+
+/* line 53, ../sass/style.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 57, ../sass/style.scss */
+h6 {
+  font-size: 16px;
+}
+
+/* line 61, ../sass/style.scss */
+p {
+  margin: 10px 0 15px 0;
+}
+
+/* line 74, ../sass/style.scss */
+a {
+  text-decoration: none;
+  text-shadow: none;
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+}
+
+/* line 91, ../sass/style.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 93, ../sass/style.scss */
+footer a {
+  text-decoration: none;
+}
+
+/* line 98, ../sass/style.scss */
+em {
+  font-style: italic;
+}
+
+/* line 102, ../sass/style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 106, ../sass/style.scss */
+img {
+  position: relative;
+  margin: 0 auto;
+  max-width: 95%;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 0 5px #ebebeb;
+  -webkit-box-shadow: 0 0 5px #ebebeb;
+  -moz-box-shadow: 0 0 5px #ebebeb;
+  -o-box-shadow: 0 0 5px #ebebeb;
+  -ms-box-shadow: 0 0 5px #ebebeb;
+}
+
+/* line 121, ../sass/style.scss */
+p img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+
+/* line 130, ../sass/style.scss */
+pre, code {
+  width: 95%;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 14px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+/* line 141, ../sass/style.scss */
+pre {
+  width: 95%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+/* line 148, ../sass/style.scss */
+code {
+  padding: 3px;
+  margin: 0 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* line 154, ../sass/style.scss */
+pre code {
+  display: block;
+  box-shadow: none;
+}
+
+/* line 159, ../sass/style.scss */
+blockquote {
+  color: #666;
+  margin-bottom: 20px;
+  padding: 0 0 0 20px;
+  border-left: 3px solid #bbb;
+}
+
+/* line 167, ../sass/style.scss */
+ul, ol, dl {
+  margin-bottom: 15px;
+}
+
+/* line 171, ../sass/style.scss */
+ul {
+  list-style: inside;
+  padding-left: 20px;
+}
+
+/* line 176, ../sass/style.scss */
+ol {
+  list-style: decimal inside;
+  padding-left: 20px;
+}
+
+/* line 181, ../sass/style.scss */
+dl dt {
+  font-weight: bold;
+}
+
+/* line 185, ../sass/style.scss */
+dl dd {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+/* line 190, ../sass/style.scss */
+dl p {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+/* line 195, ../sass/style.scss */
+hr {
+  height: 1px;
+  margin-bottom: 5px;
+  border: none;
+  background: url("../images/bg_hr.png") repeat-x center;
+  background-color: red;
+}
+
+/* line 203, ../sass/style.scss */
+table {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* line 209, ../sass/style.scss */
+caption {
+  caption-side: bottom;
+}
+
+/* line 211, ../sass/style.scss */
+form {
+  padding: 20px;
+}
+
+/* line 216, ../sass/style.scss */
+adress {
+  text-align: center;
+}
+
+/*******************************************************************************
+Full-Width Styles
+*******************************************************************************/
+/* line 225, ../sass/style.scss */
+.outer {
+  width: 100%;
+}
+
+/* line 229, ../sass/style.scss */
+.inner {
+  position: relative;
+  max-width: 50%;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+/* line 236, ../sass/style.scss */
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url("../images/blacktocat.png") #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* line 251, ../sass/style.scss */
+#header_wrap {
+  background: #212121;
+  background: -moz-linear-gradient(top, #373737, #212121);
+  background: -webkit-linear-gradient(top, #373737, #212121);
+  background: -ms-linear-gradient(top, #373737, #212121);
+  background: -o-linear-gradient(top, #373737, #212121);
+  background: linear-gradient(top, #373737, #212121);
+}
+
+/* line 260, ../sass/style.scss */
+#header_wrap .inner {
+  padding: 50px 10px 30px 10px;
+}
+
+/* line 264, ../sass/style.scss */
+#project_title {
+  margin: 0;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
+}
+
+/* line 272, ../sass/style.scss */
+#project_tagline {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  background: none;
+  text-shadow: #111 0px 0px 10px;
+}
+
+/* line 280, ../sass/style.scss */
+#downloads {
+  position: absolute;
+  width: 210px;
+  z-index: 10;
+  bottom: -40px;
+  right: 0;
+  height: 70px;
+  background: url("../images/icon_download.png") no-repeat 0% 90%;
+}
+
+/* line 290, ../sass/style.scss */
+.zip_download_link {
+  display: block;
+  float: right;
+  width: 90px;
+  height: 70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download.png) no-repeat bottom left;
+}
+
+/* line 300, ../sass/style.scss */
+.tar_download_link {
+  display: block;
+  float: right;
+  width: 90px;
+  height: 70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download.png) no-repeat bottom right;
+  margin-left: 10px;
+}
+
+/* line 311, ../sass/style.scss */
+.zip_download_link:hover {
+  background: url(../images/sprite_download.png) no-repeat top left;
+}
+
+/* line 315, ../sass/style.scss */
+.tar_download_link:hover {
+  background: url(../images/sprite_download.png) no-repeat top right;
+}
+
+/* line 319, ../sass/style.scss */
+#main_content_wrap {
+  background: #f2f2f2;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+
+/* line 325, ../sass/style.scss */
+#main_content {
+  padding-top: 40px;
+}
+
+/* line 329, ../sass/style.scss */
+#footer_wrap {
+  background: #212121;
+}
