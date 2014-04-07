@@ -547,6 +547,11 @@ table {
     background-color: magenta;
     font-size: 3em;
   }
+
+  /* line 28, ../sass/custom.scss */
+  .footable {
+    font-size: 1.0em;
+  }
 }
 /* Smartphones (portrait) ----------- lime/groen*/
 @media only screen and (max-width: 320px) {
@@ -601,6 +606,11 @@ table {
     background-color: silver;
     font-size: 3em;
   }
+
+  /* line 76, ../sass/custom.scss */
+  .footable {
+    font-size: 1.0em;
+  }
 }
 /* iPhone 4 ----------- teal/????*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
@@ -609,6 +619,11 @@ table {
   #main_wrap {
     background-color: teal;
     font-size: 1em;
+  }
+
+  /* line 85, ../sass/custom.scss */
+  .footable {
+    font-size: 0.8em;
   }
 }
 /* Print styles
