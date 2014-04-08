@@ -37,3 +37,9 @@
 [submodule "github/cursor-reset"]
 	path = github/cursor-reset
 	url = https://gist.github.com/5247154.git
+[submodule "github/uncss-sass"]
+	path = github/uncss-sass
+	url = https://github.com/addyosmani/grunt-uncss-sass-example.git
+[submodule "github/lightbox2"]
+	path = github/lightbox2
+	url = https://github.com/lokesh/lightbox2.git
