@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* 
+* max-width is the width of the target display area, e.g. the browser
+* max-device-width is the width of the device's entire rendering area, i.e. the actual device screen
+*
+* “em unit is equal to the computed value of ‘font-size’ property of the element on which it is used.”
+* “rem unit is equal to the computed value of ‘font-size’ on the root element.”
+*/
+/*Background with the 17 standard colors*/
+/* Smartphones (portrait and landscape) ----------- aqua/lichtblauw*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: cyan;
+    font-size: 3em;
+  }
+}
+/* Smartphones (landscape) ----------- fuchsia/roze*/
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: magenta;
+    font-size: 3em;
+  }
+
+  /* line 28, ../sass/custom.scss */
+  .footable {
+    font-size: 1.0em;
+  }
+}
+/* Smartphones (portrait) ----------- lime/groen*/
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: lime;
+    font-size: 3em;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: maroon;
+    font-size: 4em;
+  }
+}
+/* iPads (landscape) ----------- navy/donkerblauw*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: navy;
+    font-size: 4em;
+  }
+}
+/* iPads (portrait) ----------- olive/ donkergroen*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: olive;
+    font-size: 3em;
+  }
+}
+/* Desktops and laptops ----------- purple/paars*/
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: purple;
+    font-size: 3em;
+  }
+}
+/* Large screens ----------- silver/zilver*/
+@media only screen and (min-width: 1920px) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: silver;
+    font-size: 3em;
+  }
+
+  /* line 76, ../sass/custom.scss */
+  .footable {
+    font-size: 1.0em;
+  }
+}
+/* iPhone 4 ----------- teal/????*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+  /* line 12, ../sass/custom.scss */
+  #main_wrap {
+    background-color: teal;
+    font-size: 1em;
+  }
+
+  /* line 85, ../sass/custom.scss */
+  .footable {
+    font-size: 0.8em;
+  }
+}
+/* Print styles
+-------------------------------------------------------------------------------*/
