@@ -1,0 +1,23 @@
+@function str-explode($string, $separator, $private: ()) {
+  @if type-of($string) != "string" {
+    @warn "`str-explode` function expecting a string for $string; #{type-of($string)} given.";
+    @return false;
+  }
+
+  @if type-of($separator) != "string" {
+    @warn "`str-explode` function expecting a string for $separator; #{type-of($separator)} given.";
+    @return false;
+  }
+  
+  $result: $private;
+  $remaining: $string;
+  $index: str-index($string, $separator);
+  
+  @if $index > 0 {
+    $result: append($result, str-slice($string, 1, $index - 1));
+    $remaining: str-slice($string, $index + str-length($separator));
+    @return str-explode($remaining, $separator, $result);
+  } 
+ 
+  @return append($result, $remaining);
+}

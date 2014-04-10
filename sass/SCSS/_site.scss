@@ -1,0 +1,48 @@
+* { @include box-sizing(border-box); }
+
+@include establish-baseline;
+
+%reset-margin  { margin: 0; }
+%reset-border  { border: 0; }
+%reset-padding { padding: 0; }
+
+%text {
+  font-family: $font-family-text;
+  color: $color-text;
+}
+
+html {
+  @extend %text;
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  text: {
+    rendering: optimizeLegibility;
+    align: center;
+  }
+  background: image-url("textures/grey-prism.png") 50% 0;
+  @include background-size(50%);
+  -webkit-tap-highlight-color: rgba($black, 0);
+
+  &.toolkit-baseline { @include debug-vertical-alignment; }
+}
+
+body {
+  @extend %reset-margin;
+  background: none;
+}
+
+@mixin theme-selection {
+  background: $color-background-shade;
+  text-shadow: none;
+}
+
+// These have to be separate.
+::-moz-selection { @include theme-selection; }
+::selection { @include theme-selection; }
+
+
+
+@include breakpoint($tablet-large) {
+  html,
+  body { height: 100%; }
+}
