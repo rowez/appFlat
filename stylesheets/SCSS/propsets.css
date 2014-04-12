@@ -1,0 +1,44 @@
+/* line 5, ../../sass/SCSS/propsets.scss */
+div {
+  background-image: url(foo.png);
+  background-position: 50%;
+}
+
+/* line 12, ../../sass/SCSS/propsets.scss */
+span {
+  background-image: url(bar.png);
+  background-position: 100%;
+}
+
+/* line 19, ../../sass/SCSS/propsets.scss */
+p {
+  border-upper-left: 2px;
+  border-upper-right: 3px;
+}
+
+/* 2 + 3 */
+/* 5 */
+/* line 33, ../../sass/SCSS/propsets.scss */
+foo|div {
+  color: red;
+}
+
+/* line 39, ../../sass/SCSS/propsets.scss */
+div sp\ , #abcan {
+  color: red;
+}
+/* line 41, ../../sass/SCSS/propsets.scss */
+div sp\  p, div sp\  |q, #abcan p, #abcan |q {
+  background: blue;
+  color: \hey;
+  width: \10 \20 \ ;
+}
+/* line 45, ../../sass/SCSS/propsets.scss */
+div sp\  p a, div sp\  |q a, #abcan p a, #abcan |q a {
+  height: 1;
+}
+
+/* line 52, ../../sass/SCSS/propsets.scss */
+d\ v a, sp\ n a {
+  color: blue;
+}

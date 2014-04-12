@@ -1,0 +1,4 @@
+/* line 1, ../../sass/SCSS/ie-backslash.scss */
+div {
+  background-color: #cc0000 \9;
+}

@@ -1,0 +1,6 @@
+/* line 1, ../../sass/SCSS/function-names.scss */
+div {
+  color: hello;
+  color: unquote("hello");
+  color: "hello" unquote;
+}

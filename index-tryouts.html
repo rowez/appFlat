@@ -1,0 +1,314 @@
+<!doctype html>
+
+<!-- Do not use acronym (abbr), applet (object), basefront (default color, size and font), big (css), center (css), dir (ul), font (css), frame (window in a frameset), frameset (defines a set of frames), noframes (alternate content), strike (del), tt (css)-->
+
+<!-- Important stuff for SEO, don't neglect. (And don't dupicate values across your site!) -->
+<!-- concatenate and minify for production -->
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+<meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- <base href="file:///var/www/" target="_blank"> -->
+
+<title>Appflat</title>
+<meta name="author" content="RW" />
+<meta name="description" content="appflat">
+<meta name="keywords" content="appFlat,rowez">
+<!-- Don't forget to set your site up: http://google.com/webmasters -->
+<meta name="google-site-verification" content="" />
+<!-- Who owns the content of this site? -->
+<meta name="Copyright" content="" />
+<!-- Better not to use viewports! Why? -->
+<!--  Mobile Viewport
+http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+device-width : Occupy full width of the screen in its current orientation
+initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width (wrong for most sites)
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+<link rel="shortcut icon" href="favicon.ico" />
+<!--
+HTML5 Reset: https://github.com/murtaugh/HTML5-Reset
+Free to use
+--><link rel="stylesheet" href="github/html5reset/assets/css/reset.css" />
+<!--<link rel="stylesheet" href="github/html5reset/assets/css/style.css" />
+--><!-- Cursor reset override html5reset reset.css -->
+<link rel="stylesheet" href="github/cursor-reset/cursor-reset.css" />
+<script src="/appFlat/js/jquery-1.11.0.min.js"></script>
+<!-- Lea Verou's Prefix Free, lets you use un-prefixed properties in your CSS files -->
+<script src="github/html5reset/Sassets/js/libs/prefixfree.min.js"></script>
+<!-- This is an un-minified, complete version of Modernizr. 
+Before you move to production, you should generate a custom build that only has the detects you need. -->
+<script src="github/html5reset/assets/js/libs/modernizr-2.7.1.dev.js"></script>
+<!-- Application-specific meta tags -->
+<!-- Windows 8: see http://msdn.microsoft.com/en-us/library/ie/dn255024%28v=vs.85%29.aspx for details -->
+<meta name="application-name" content="" /> 
+<meta name="msapplication-TileColor" content="" /> 
+<meta name="msapplication-TileImage" content="" />
+<meta name="msapplication-square150x150logo" content="" />
+<meta name="msapplication-square310x310logo" content="" />
+<meta name="msapplication-square70x70logo" content="" />
+<meta name="msapplication-wide310x150logo" content="" />
+<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
+<meta name="twitter:card" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:url" content="">
+<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+
+<link rel="stylesheet" type="text/css" href="github/FooTable/css/footable.core.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="github/FooTable/css/footable.standalone.min.css" media="screen">
+<script src="/appFlat/github/FooTable/js/footable.js"></script>
+<script src="/appFlat/github/FooTable/js/footable.sort.js"></script>
+<script src="/appFlat/github/FooTable/js/footable.filter.js"></script>
+<script src="/appFlat/github/FooTable/js/footable.paginate.js"></script>
+<script src="/appFlat/github/FooTable/js/footable.striping.js"></script>
+
+<script src="/appFlat/github/cycle2/build/jquery.cycle2.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="stylesheets/estyle.css" media="screen">
+<link rel="stylesheet" type="text/css" href="stylesheets/jquery.mobile-1.4.2.min.css" media="screen">
+<!--<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+-->
+<!--[if lt IE 9]>
+<script src="/appFlat/js/respond.min.js"></script>
+<script> src="http://html5shiv.googlecode.com/svn/trunk/html5.js"</script>
+<![endif]-->
+<!--<script src="/appFlat/js/jquery.mobile-1.4.2.min.js"></script>
+<script src="/appFlat/js/modernizr-latest.js"></script>
+-->
+<script type="text/javascript">
+$(function () {
+$('.footable').footable({
+breakpoints: {
+phone: 360,
+tablet: 768,
+desktop: 1280
+}
+});
+$('table').trigger('footable_expand_first_row');
+<!--$('table').trigger('footable_expand_all');
+-->
+<!--$('table').trigger('footable_collapse_all');
+-->
+$('table').trigger('footable_collapse_all').trigger('footable_redraw');
+$('table').trigger('footable_clear_filter');
+});
+</script>
+<link rel="stylesheet" type="text/css" href="stylesheets/tty.css" media="tty">
+<link rel="stylesheet" type="text/css" href="stylesheets/tv.css" media="tv">
+<link rel="stylesheet" type="text/css" href="stylesheets/handheld.css" media="handheld">
+<link rel="stylesheet" type="text/css" href="stylesheets/braille.css" media="braille">
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/buttons.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/link_icons.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+<!--<link rel="stylesheet" href="github/lightbox2/css/lightbox.css">
+--><link rel="stylesheet" href="stylesheets/custom.css" />
+<!-- https://github.com/daneden/animate.css -->
+<link rel="stylesheet" href="stylesheets/animate.css" />
+<style>	</style>
+</head>
+<body><!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div id="main_wrap">
+<div id="header_wrap" class="outer">
+<header class="inner">
+<section>
+<div class="animated hinge">Animated</div>
+<div id="menu_wrap">
+<ul>
+	<!-- http://alexwolfe.github.io/Buttons/ -->
+<li class="cols-3"><h1><a href="zien/thuis" class="button button-rounded button-flat-royal"><i class="fa fa-envelope"></i> Thuis</a></h1></li>
+<li class="cols-3"><h1><a href="zien/rowez" class="button button-rounded button-flat-royal"><i class="fa fa-cloud"></i> Rowez</a></h1></li>
+<li class="cols-3"><h1><a href="zien/over" class="button button-rounded button-flat-royal"><i class="fa fa-envelope"></i> Over</a></h1></li>
+</ul>
+</div>  <!-- menu wrap -->
+<iframe src="address.htm"></iframe>
+<iframe src="form.htm"></iframe>
+</section>
+<!--			<h3 style="clear: both;">Four image set</h3>
+			<div class="image-row">
+				<div class="image-set">
+					<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/img/demopage/thumb-3.jpg" alt=""/></a>
+					<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/img/demopage/thumb-4.jpg" alt="" /></a>
+					<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/img/demopage/thumb-5.jpg" alt="" /></a>
+					<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/img/demopage/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/img/demopage/thumb-6.jpg" alt="" /></a>
+				</div>
+			</div>
+--><img src="images/2560_4320x3240_IMG_4462.JPG">
+<!-- <a id="forkme_banner" href="https://github.com/rowez/appFlat">View on GitHub</a>
+-->
+<h1><a href="files">Page Title</a></h1>
+
+<nav>
+
+<ol>
+<li><a href="">Nav Link 1</a></li>
+<li><a href="">Nav Link 2</a></li>
+<li><a href="">Nav Link 3</a></li>
+</ol>
+
+</nav>
+</header>
+</div> <!-- header wrap -->
+<div id="table_wrap">
+<!-- http://css-tricks.com/footable-a-jquery-plugin-for-responsive-data-tables/ -->
+<p>
+Search: <input id="filter" type="text">
+Status: <select class="filter-status">
+<option></option>
+<option value="1">Active</option>
+<option value="2">Disabled</option>
+<option value="3">Suspended</option></option>
+</select>
+<a href="#clear" class="clear-filter" title="clear filter">[clear]</a>
+<a href="#api" class="filter-api" title="Filter using the Filter API">[filter API]</a>
+</p>      
+<table id="footable" class="footable table toggle-arrow-tiny" data-page-size="4" data-page-navigation=".pagination" data-filter="#filter" data-sort="true" data-filter-minimum="3" data-filter-text-only="true">
+<caption>Table responsive?</caption>
+<thead>
+<tr>
+<th data-sort-initial="ascending" data-class="expand" data-name="Roepnaam">Small</th>
+<th data-ignore="true" data-hide="all" data-type="numeric">CustomerID</th>
+<th data-sort-ignore="true">CustomerName</th>
+<th>ContactName</th>
+<th data-hide="phone">Address</th>
+<th data-hide="phone, tablet">City</th>
+<th data-hide="phone, tablet, desktop">PostalCode</th>
+<th data-hide="">Country</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alfreds</td>
+<td>1</td>
+<td>Alfreds Futterkiste</td>
+<td>Maria Anders</td>
+<td>Obere Str. 57</td>
+<td>Berlin</td>
+<td>12209</td>
+<td>Germany</td>
+<td data-value="1"></td>
+</tr>
+<tr>
+<td>Antonio</td>
+<td>2</td>
+<td>Antonio Moreno Taquería</td>
+<td>Antonio Moreno</td>
+<td>Mataderos 2312</td>
+<td>México D.F.</td>
+<td>05023</td>
+<td>Mexico</td>
+<td data-value="2"></td>
+</tr>
+<tr>
+<td>Horn</td>
+<td>3</td>
+<td>Around the Horn</td>
+<td>Thomas Hardy</td>
+<td>120 Hanover Sq.</td>
+<td>London</td>
+<td>WA1 1DP</td>
+<td>UK</td>
+<td data-value="1"></td>
+</tr>
+<tr>
+<td>Berglunds</td>
+<td>4</td>
+<td>Berglunds snabbköp</td>
+<td>Christina Berglund</td>
+<td>Berguvsvägen 8</td>
+<td>Luleå</td>
+<td>S-958 22</td>
+<td>Sweden</td>
+<td data-value="3"></td>
+</tr>
+</tbody>
+<tfoot class="hide-if-no-paging">
+<tr>
+<td colspan="5">
+<div class="pagination pagination-centered hide-if-no-paging"></div>
+</td>
+</tr>
+</tfoot>
+</table>
+</div> <!-- table wrap -->
+
+<div id="slideshow_wrap">
+<div class="cycle-slideshow">
+<img src="images/477x306_betuwelijndoordebocht.jpg">
+<img src="images/259x149_rijn.jpeg">
+<img src="images/259x194_bomen-bloesem.jpeg">
+</div> <!-- cycle slideshow -->
+</div> <!-- slideshow wrap -->
+
+<figure>
+<img src="images/960_4320x3240_IMG_4462.JPG" 
+alt="Roerdomp" 
+sizes="100%"
+srcset="images/320_4320x3240_IMG_4462.JPG 480w, images/480_4320x3240_IMG_4462.JPG 960w, images/1280_4320x3240_IMG_4462.JPG 1280w">
+<figcaption>Roerdomp, 2013</figcaption>
+</figure>
+
+<div id="menu_wrap">
+<ul> 
+<li class="cols-4"><marquee><a href="handboek.html">Handboek (NL) 2014</a></marquee></li>
+<li class="cols-4"><a href="boek.html">Boek (NL) 2014</a></li>
+<li class="cols-4"><a href="scrift.html">Scrift (NL) 2014</a></li>
+<li class="cols-4"><a href="index-gh-page.html">GitHub page</a></li>
+</ul>
+</div> <!-- menu wrap -->
+
+<div id="sidebar_left_wrap" class="sidebar">
+<ul> 
+<li class="cols-1"><marquee><a href="handboek.html">Handboek (NL) 2014</a></marquee></li>
+<li class="cols-1"><a href="boek.html">Boek (NL) 2014</a></li>
+<li class="cols-1"><a href="scrift.html">Scrift (NL) 2014</a></li>
+<li class="cols-1"><a href="index-gh-page.html">GitHub page</a></li>
+</ul>
+</div> <!-- sidebar left wrap -->
+<div id="main_content_wrap" class="outer">
+<section id="main_content" class="inner">
+<img src="images/580x200_uiterwaardondergelopen.jpg">
+</section>
+</div> <!-- main content wrap -->
+
+<code>sakjfhalwiefhaiwehfakbdc</code>
+<div id="ace_wrap">
+</div> <!-- ace wrap -->
+<article>
+<h1 href="/">Article Header</h1>
+<p>Etiam pretium odio eu mi convallis vitae varius neque pharetra. Nulla vestibulum nisi ut sem cursus sed mattis nisi egestas.</p>
+<h2>Article Subhead</h2>
+<p>Vestibulum lacus erat, volutpat vel dignissim at, fringilla ut felis.</p>
+</article>
+<aside>
+<h6>Sidebar Content</h6>
+</aside>
+<textarea>slkfuahser fkhvsrlkf cfslrbfccrcjbfgbfres cjbzdfb vjbzc</textarea>
+<input>blalasdlfadskfjlwejfl</input>
+<div id="footer_wrap" class="outer">
+<footer class="inner">
+<p><small>&copy; Copyright Your Name Here 2013. All Rights Reserved.</small></p>
+</footer>
+</div><!-- footer wrap -->
+</div> <!-- main wrap -->
+</body></html>

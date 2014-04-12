@@ -1,0 +1,5 @@
+/* line 1, ../../sass/SCSS/multiline-var.scss */
+foo {
+  a: 3;
+  c: a b c;
+}

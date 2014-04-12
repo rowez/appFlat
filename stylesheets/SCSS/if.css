@@ -1,0 +1,10 @@
+/* line 7, ../../sass/SCSS/if.scss */
+span {
+  color: blue;
+}
+
+/* line 12, ../../sass/SCSS/if.scss */
+div {
+  color: green;
+  height: 40px;
+}

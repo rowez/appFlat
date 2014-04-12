@@ -1,0 +1,19 @@
+/* line 1, ../../sass/SCSS/sample.scss */
+#navbar {
+  width: 80%;
+  height: 23px;
+}
+
+/* line 5, ../../sass/SCSS/sample.scss */
+#navbar ul {
+  list-style-type: none;
+}
+
+/* line 8, ../../sass/SCSS/sample.scss */
+#navbar li {
+  float: left;
+}
+/* line 10, ../../sass/SCSS/sample.scss */
+#navbar li a {
+  font-weight: bold;
+}

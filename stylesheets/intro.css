@@ -1,0 +1,204 @@
+/* line 5, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/intro.scss */
+html {
+  color: lightblue;
+  background-color: navy;
+}
+
+/* line 15, ../sass/intro.scss */
+body {
+  color: mediumblue;
+  background-color: blue;
+}
+
+/* line 16, ../sass/intro.scss */
+div {
+  color: black;
+  background-color: white;
+  clear: both;
+}
+
+/* line 24, ../sass/intro.scss */
+#imageInhoud {
+  width: 50%;
+  height: auto;
+  background-color: red;
+  float: right;
+}
+
+/* line 30, ../sass/intro.scss */
+#imageInhoud > div {
+  background: url(http://localhost/appFlat/images/259x149_rijn.jpeg);
+}
+
+/* line 34, ../sass/intro.scss */
+.inhoud, #menuInhoud h1, #menuInhoud h2, #menuInhoud h3, #menuInhoud h4 {
+  float: right;
+  font-weight: bold;
+}
+
+/* line 40, ../sass/intro.scss */
+#menuInhoud {
+  color: black;
+  background-color: white;
+  width: 100%;
+  float: right;
+}
+/* line 43, ../sass/intro.scss */
+#menuInhoud h1 {
+  color: orange;
+  background-color: white;
+  font-size: xx-large;
+  margin: 5px 0px 5px 0px;
+  clear: both;
+}
+/* line 49, ../sass/intro.scss */
+#menuInhoud h2 {
+  color: black;
+  background-color: white;
+  font-size: x-large;
+  clear: both;
+}
+/* line 54, ../sass/intro.scss */
+#menuInhoud h3 {
+  color: red;
+  background-color: white;
+  font-size: large;
+  margin: 4px;
+}
+/* line 59, ../sass/intro.scss */
+#menuInhoud h4 {
+  color: black;
+  background-color: white;
+  clear: both;
+  font-weight: normal;
+  margin: 0px 0px 5px 0px;
+}
+/* line 65, ../sass/intro.scss */
+#menuInhoud h5 {
+  color: blue;
+}
+/* line 66, ../sass/intro.scss */
+#menuInhoud h6 {
+  color: orange;
+}
+
+/* line 82, ../sass/intro.scss */
+#slideshow {
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 88, ../sass/intro.scss */
+#slideshow > div {
+  height: 100%;
+  width: 8128px;
+  background: url(http://localhost/appFlat/images/8128x608.jpg);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  -ms-transition: opacity 0.5s ease-out;
+  -webkit-animation: moveSlideshow 60s linear infinite;
+  -moz-animation: moveSlideshow 60s linear infinite;
+}
+
+@-webkit-keyframes moveSlideshow {
+  /* line 104, ../sass/intro.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 105, ../sass/intro.scss */
+  100% {
+    left: -500px;
+  }
+}
+@-moz-keyframes moveSlideshow {
+  /* line 108, ../sass/intro.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 109, ../sass/intro.scss */
+  100% {
+    left: -500px;
+  }
+}
+/* line 112, ../sass/intro.scss */
+img {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}

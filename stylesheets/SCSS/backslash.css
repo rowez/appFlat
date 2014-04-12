@@ -1,0 +1,13 @@
+/* line 1, ../../sass/SCSS/backslash.scss */
+div, span {
+  color: red;
+}
+/* line 3, ../../sass/SCSS/backslash.scss */
+div \ foo, span \ foo {
+  color: blue;
+}
+
+/* line 8, ../../sass/SCSS/backslash.scss */
+[data-icon='test-1']:before {
+  content: '\\';
+}

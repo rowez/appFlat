@@ -1,0 +1,37 @@
+@media screen {
+  /* line 2, ../../sass/SCSS/media-hoisting.scss */
+  1 {
+    color: black;
+    height: 8px;
+  }
+}
+/* line 8, ../../sass/SCSS/media-hoisting.scss */
+1 {
+  color: red;
+}
+@media screen {
+  /* line 8, ../../sass/SCSS/media-hoisting.scss */
+  1 {
+    color: blue;
+    height: 10px;
+  }
+}
+
+/* line 16, ../../sass/SCSS/media-hoisting.scss */
+1 {
+  color: beige;
+}
+/* line 18, ../../sass/SCSS/media-hoisting.scss */
+1  2  {
+  color: teal;
+}
+@media screen {
+  /* line 18, ../../sass/SCSS/media-hoisting.scss */
+  1  2  {
+    color: orange;
+  }
+  /* line 22, ../../sass/SCSS/media-hoisting.scss */
+  1  2  3  {
+    height: 12px;
+  }
+}

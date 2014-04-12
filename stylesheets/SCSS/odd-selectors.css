@@ -1,0 +1,17 @@
+/* line 1, ../../sass/SCSS/odd-selectors.scss */
+"fudge" 123 {
+  color: red;
+}
+/* line 3, ../../sass/SCSS/odd-selectors.scss */
+"fudge"    123  + 456    "mudge"   #f   oo   [hey] {
+  font-weight: bold;
+}
+
+/* line 8, ../../sass/SCSS/odd-selectors.scss */
+div span {
+  color: red;
+}
+/* line 10, ../../sass/SCSS/odd-selectors.scss */
+div span + p a {
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+/* line 1, ../../sass/SCSS/weird-selectors.scss */
+> > E {
+  color: red;
+}
+
+/* line 5, ../../sass/SCSS/weird-selectors.scss */
+E > > {
+  color: red;
+}
+
+/* line 10, ../../sass/SCSS/weird-selectors.scss */
+> > E > > > > F > > {
+  color: red;
+}

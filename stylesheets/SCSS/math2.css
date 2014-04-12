@@ -1,0 +1,19 @@
+/* line 36, ../../sass/SCSS/math2.scss */
+#tester {
+  numerator: numerator(2.5);
+  denominator: denominator(2.5);
+  to-fraction: to-fraction(2.5);
+  to-decimal: to-decimal(3/2);
+  exponent: exponent(8, 2, 3);
+  power: power(20, 3.14159);
+  sqrt: 127;
+  nth-root: nth-root(27, 3);
+  factorial: factorial(9);
+  pi: 3.14159;
+  e: 2.71828;
+  ln: ln(2.71828);
+  log10: log10(10);
+  golden: golden-ratio();
+  is-int: is-int(4);
+  is-float: is-float(2);
+}

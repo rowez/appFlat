@@ -1,0 +1,12 @@
+/* line 1, ../../sass/SCSS/extend.scss */
+#a {
+  color: black;
+}
+/* line 3, ../../sass/SCSS/extend.scss */
+#a > div {
+  color: white;
+}
+/* line 6, ../../sass/SCSS/extend.scss */
+#a a b {
+  color: gray;
+}

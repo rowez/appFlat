@@ -1,0 +1,11 @@
+/* line 5, ../../sass/SCSS/default-args.scss */
+div {
+  value: 1, 2;
+  value: 2, 3;
+  value: 1, 3;
+}
+
+/* line 17, ../../sass/SCSS/default-args.scss */
+div {
+  value: ho;
+}

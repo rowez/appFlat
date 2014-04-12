@@ -1,0 +1,55 @@
+/* line 15, ../../sass/SCSS/mixin-content.scss */
+div {
+  /* with a content block */
+  name: foo;
+  stuff: content for foo;
+  name: bar;
+  stuff: content for bar;
+  stuff: content for foo;
+  /* without */
+  name: foo;
+  name: bar;
+  stuff: content for bar;
+}
+
+/* line 44, ../../sass/SCSS/mixin-content.scss */
+span {
+  color: green;
+}
+/* line 26, ../../sass/SCSS/mixin-content.scss */
+span div {
+  color: red;
+  background: blue;
+  width: 80%;
+}
+@media fudge {
+  /* line 49, ../../sass/SCSS/mixin-content.scss */
+  span div p {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  /* line 52, ../../sass/SCSS/mixin-content.scss */
+  span div p a {
+    text-decoration: underline;
+  }
+}
+/* line 39, ../../sass/SCSS/mixin-content.scss */
+span div form {
+  color: orange;
+}
+@media fudge {
+  /* line 49, ../../sass/SCSS/mixin-content.scss */
+  span div form p {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  /* line 52, ../../sass/SCSS/mixin-content.scss */
+  span div form p a {
+    text-decoration: underline;
+  }
+}
+
+/* line 66, ../../sass/SCSS/mixin-content.scss */
+* html #logo {
+  background-image: url(/logo.gif);
+}

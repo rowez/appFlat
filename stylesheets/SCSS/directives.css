@@ -1,0 +1,13 @@
+@foo div foo(bar) {
+  huz: buz;
+}
+
+/* line 5, ../../sass/SCSS/directives.scss */
+div {
+  hey: ho;
+}
+
+/* line 11, ../../sass/SCSS/directives.scss */
+1+2 type-of("hello") {
+  hey: ho;
+}

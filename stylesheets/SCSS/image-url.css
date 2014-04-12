@@ -1,0 +1,5 @@
+/* line 1, ../../sass/SCSS/image-url.scss */
+div {
+  blah: url('/images/hello.png');
+  blah: /images/hello.png;
+}

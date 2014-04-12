@@ -1,0 +1,6 @@
+/* line 1, ../../sass/SCSS/if-in-propset.scss */
+div {
+  prop-a: "hello";
+  prop-b: "goodbye";
+  prop-c: "badbye";
+}

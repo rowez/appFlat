@@ -1,4 +1,129 @@
 @charset "UTF-8";
+/* line 1, ../sass/_custom_buttons.scss */
+.button {
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  background-color: #eeeeee;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #e1e1e1));
+  background: -webkit-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: -moz-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: -o-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: linear-gradient(top, #fbfbfb, #e1e1e1);
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  border: 1px solid #d4d4d4;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 25.6px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #666666;
+  text-shadow: 0 1px 1px white;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 42, ../scss/partials/_buttons.scss */
+/* line 31, ../sass/_custom_buttons.scss */
+.button:hover {
+  background-color: #eeeeee;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, white), color-stop(100%, gainsboro));
+  background: -webkit-linear-gradient(top, white, gainsboro);
+  background: -moz-linear-gradient(top, white, gainsboro);
+  background: -o-linear-gradient(top, white, gainsboro);
+  background: linear-gradient(top, #ffffff, #dcdcdc);
+}
+
+/* line 46, ../scss/partials/_buttons.scss */
+/* line 40, ../sass/_custom_buttons.scss */
+.button:active {
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  background: #eeeeee;
+  color: #bbbbbb;
+}
+
+/* line 52, ../scss/partials/_buttons.scss */
+/* line 49, ../sass/_custom_buttons.scss */
+.button:focus {
+  outline: none;
+}
+
+/* line 53, ../sass/_custom_buttons.scss */
+.button-rounded {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license
+
+Copyright (c) 2013 Daniel Eden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+/* line 73, ../sass/_custom_buttons.scss */
+.button-flat-royal {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #87318c;
+  color: white;
+  text-shadow: none;
+  border: none;
+}
+
+/* line 330, ../scss/partials/_buttons.scss */
+/* line 91, ../sass/_custom_buttons.scss */
+.button-flat-royal:hover {
+  background: #99389f;
+}
+
+/* line 333, ../scss/partials/_buttons.scss */
+/* line 95, ../sass/_custom_buttons.scss */
+.button-flat-royal:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  background: #764479;
+  color: #501d53;
+}
+
+/* line 338, ../scss/partials/_buttons.scss */
+/* line 104, ../sass/_custom_buttons.scss */
+.button-flat-royal.disabled {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
 /* 
 * max-width is the width of the target display area, e.g. the browser
 * max-device-width is the width of the device's entire rendering area, i.e. the actual device screen
@@ -10,7 +135,7 @@
 /* Smartphones (portrait and landscape) ----------- aqua/lichtblauw*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: cyan;
     font-size: 3em;
@@ -19,13 +144,13 @@
 /* Smartphones (landscape) ----------- fuchsia/roze*/
 @media only screen and (min-width: 321px) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: magenta;
     font-size: 3em;
   }
 
-  /* line 28, ../sass/custom.scss */
+  /* line 30, ../sass/custom.scss */
   .footable {
     font-size: 1.0em;
   }
@@ -33,7 +158,7 @@
 /* Smartphones (portrait) ----------- lime/groen*/
 @media only screen and (max-width: 320px) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: lime;
     font-size: 3em;
@@ -42,7 +167,7 @@
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: maroon;
     font-size: 4em;
@@ -51,7 +176,7 @@
 /* iPads (landscape) ----------- navy/donkerblauw*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: navy;
     font-size: 4em;
@@ -60,7 +185,7 @@
 /* iPads (portrait) ----------- olive/ donkergroen*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: olive;
     font-size: 3em;
@@ -69,7 +194,7 @@
 /* Desktops and laptops ----------- purple/paars*/
 @media only screen and (min-width: 1224px) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: purple;
     font-size: 3em;
@@ -78,13 +203,13 @@
 /* Large screens ----------- silver/zilver*/
 @media only screen and (min-width: 1920px) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: silver;
     font-size: 3em;
   }
 
-  /* line 76, ../sass/custom.scss */
+  /* line 78, ../sass/custom.scss */
   .footable {
     font-size: 1.0em;
   }
@@ -92,13 +217,13 @@
 /* iPhone 4 ----------- teal/????*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  /* line 12, ../sass/custom.scss */
+  /* line 14, ../sass/custom.scss */
   #main_wrap {
     background-color: teal;
     font-size: 1em;
   }
 
-  /* line 85, ../sass/custom.scss */
+  /* line 87, ../sass/custom.scss */
   .footable {
     font-size: 0.8em;
   }

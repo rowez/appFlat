@@ -1,0 +1,10 @@
+/* line 38, ../../sass/SCSS/linear-gradient.scss */
+div {
+  background-color: red;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, red 0%, orange 50%, yellow 50%, green 100%);
+  background-image: -webkit-linear-gradient(top, red 0%, orange 50%, yellow 50%, green 100%);
+  background-image: -moz-linear-gradient(top, red 0%, orange 50%, yellow 50%, green 100%);
+  background-image: -ms-linear-gradient(top, red 0%, orange 50%, yellow 50%, green 100%);
+  background-image: -o-linear-gradient(top, red 0%, orange 50%, yellow 50%, green 100%);
+  background-image: linear-gradient(top, red 0%, orange 50%, yellow 50%, green 100%);
+}

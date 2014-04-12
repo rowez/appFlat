@@ -1,0 +1,53 @@
+/* line 2, ../../sass/SCSS/selectors.scss */
+div span, div p, div span {
+  color: red;
+}
+/* line 5, ../../sass/SCSS/selectors.scss */
+div a.foo.bar.foo {
+  color: green;
+}
+/* line 8, ../../sass/SCSS/selectors.scss */
+div:nth(-3) {
+  color: blue;
+}
+
+@-webkit-keyframes {
+  /* line 14, ../../sass/SCSS/selectors.scss */
+  from {
+    left: 0px;
+  }
+  /* line 16, ../../sass/SCSS/selectors.scss */
+  from hence {
+    whatever: hoo;
+  }
+
+  /* line 20, ../../sass/SCSS/selectors.scss */
+  to {
+    left: 200px;
+  }
+}
+
+/* line 25, ../../sass/SCSS/selectors.scss */
+div {
+  @whatever {
+    blah: blah;
+    /* line 28, ../../sass/SCSS/selectors.scss */
+    stuff {
+      blah: bloh;
+    }
+}
+
+}
+
+/* line 35, ../../sass/SCSS/selectors.scss */
+a, b {
+  color: red;
+}
+/* line 37, ../../sass/SCSS/selectors.scss */
+a c, a d, b c, b d {
+  height: 10px;
+}
+/* line 39, ../../sass/SCSS/selectors.scss */
+a c e, a c f, a d e, a d f, b c e, b c f, b d e, b d f {
+  width: 12px;
+}

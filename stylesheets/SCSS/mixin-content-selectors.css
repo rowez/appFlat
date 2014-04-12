@@ -1,0 +1,8 @@
+/* line 10, ../../sass/SCSS/mixin-content-selectors.scss */
+div foo-sel bar {
+  color: red;
+}
+/* line 12, ../../sass/SCSS/mixin-content-selectors.scss */
+div foo-sel bar hux {
+  msg: hey;
+}

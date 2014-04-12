@@ -1,0 +1,5 @@
+/* line 1, ../../sass/SCSS/hyphen-interpolated.scss */
+div {
+  foo: -hux-5;
+  bar: hux-5;
+}

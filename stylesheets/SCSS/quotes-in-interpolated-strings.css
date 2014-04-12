@@ -1,0 +1,11 @@
+/* line 3, ../../sass/SCSS/quotes-in-interpolated-strings.scss */
+bar {
+  bar: bar;
+  bar: "bar";
+}
+
+/* line 7, ../../sass/SCSS/quotes-in-interpolated-strings.scss */
+foobar {
+  foobar: foobar;
+  foobar: "foobar";
+}

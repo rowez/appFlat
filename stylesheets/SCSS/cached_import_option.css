@@ -1,0 +1,9 @@
+/* line 1, ../../sass/SCSS/_cached_import_option_partial.scss */
+partial {
+  value: whatever();
+}
+
+/* line 3, ../../sass/SCSS/cached_import_option.scss */
+main {
+  value: whatever();
+}

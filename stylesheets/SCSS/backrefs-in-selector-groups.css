@@ -1,0 +1,9 @@
+/* line 2, ../../sass/SCSS/backrefs-in-selector-groups.scss */
+a:c, a d {
+  hey: ho;
+}
+
+/* line 8, ../../sass/SCSS/backrefs-in-selector-groups.scss */
+a b:c, a b d {
+  hey: ho;
+}

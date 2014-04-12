@@ -1,0 +1,6 @@
+/* line 7, ../../sass/SCSS/arglist.scss */
+div {
+  foo-x: a;
+  foo-y: b;
+  foo-zs: c, d, e;
+}

@@ -1,0 +1,6 @@
+@import url(foo.css);
+@import url(bar.css);
+/* line 3, ../../sass/SCSS/css-import.scss */
+div {
+  color: red;
+}

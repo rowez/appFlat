@@ -1,0 +1,12 @@
+/* line 1, ../../sass/SCSS/classes-and-ids.scss */
+div.foo {
+  color: red;
+}
+/* line 3, ../../sass/SCSS/classes-and-ids.scss */
+div.foo #hux buz {
+  width: auto;
+}
+/* line 6, ../../sass/SCSS/classes-and-ids.scss */
+div.foo > .mux {
+  text-align: center;
+}

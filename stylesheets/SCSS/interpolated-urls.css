@@ -1,0 +1,14 @@
+/* line 2, ../../sass/SCSS/interpolated-urls.scss */
+div {
+  background-image: "url(/static_loc/img/beta.png)";
+}
+
+/* line 6, ../../sass/SCSS/interpolated-urls.scss */
+span {
+  background-image: url(/static_loc/img/beta.png);
+}
+
+/* line 10, ../../sass/SCSS/interpolated-urls.scss */
+fudge {
+  walnuts: blix "fludgehey now{";
+}

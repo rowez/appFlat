@@ -1,0 +1,74 @@
+/* line 1, ../../sass/SCSS/multi-blocks.scss */
+a b {
+  color: red;
+}
+/* line 3, ../../sass/SCSS/multi-blocks.scss */
+a b c d {
+  height: 10;
+}
+/* line 6, ../../sass/SCSS/multi-blocks.scss */
+a b e f {
+  width: 12;
+}
+
+@media all and (min-width: 960px) {
+  /* line 12, ../../sass/SCSS/multi-blocks.scss */
+  b {
+    font-weight: normal;
+  }
+}
+@media (min-width: 980px) {
+  /* line 18, ../../sass/SCSS/multi-blocks.scss */
+  a {
+    color: red;
+  }
+}
+@media screen and (all) {
+  /* hey */
+  /* line 25, ../../sass/SCSS/multi-blocks.scss */
+  p {
+    color: blue;
+  }
+  /* line 27, ../../sass/SCSS/multi-blocks.scss */
+  p a {
+    color: green;
+  }
+  /* line 29, ../../sass/SCSS/multi-blocks.scss */
+  p a:after {
+    content: ">>";
+  }
+
+  /* line 34, ../../sass/SCSS/multi-blocks.scss */
+  span {
+    display: inline-block;
+  }
+}
+/* line 39, ../../sass/SCSS/multi-blocks.scss */
+a b c {
+  /* a */
+  blee: blee;
+  /* b */
+  /* c */
+  /* d */
+  blah: blah;
+}
+/* line 43, ../../sass/SCSS/multi-blocks.scss */
+a b c d e f {
+  blah: blah;
+  bloo: bloo;
+}
+@media print and (foo: 1 2 3), (bar: 3px hux(muz)), not screen {
+  /* line 48, ../../sass/SCSS/multi-blocks.scss */
+  a b c g h, a b c i j {
+    /* aa */
+    hey: ho;
+    /* bb */
+    /* cc */
+    haa: hoo;
+    /* dd */
+  }
+  /* line 53, ../../sass/SCSS/multi-blocks.scss */
+  a b c g h k l m, a b c i j k l m {
+    hee: fee;
+  }
+}

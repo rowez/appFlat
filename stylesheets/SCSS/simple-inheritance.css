@@ -1,0 +1,64 @@
+/* line 2, ../../sass/SCSS/simple-inheritance.scss */
+earth mammal, earth dog, earth cat, earth horse, earth naysayer, earth bird {
+  blood: warm;
+}
+
+/* line 8, ../../sass/SCSS/simple-inheritance.scss */
+earth mammal, earth dog, earth cat, earth horse, earth naysayer {
+  produces-milk: true;
+}
+
+/* line 18, ../../sass/SCSS/simple-inheritance.scss */
+dog {
+  says: "Woof!";
+}
+
+/* line 22, ../../sass/SCSS/simple-inheritance.scss */
+cat {
+  says: "Meow.";
+}
+
+/* line 26, ../../sass/SCSS/simple-inheritance.scss */
+horse, naysayer {
+  says: "Nay.";
+}
+
+/* line 30, ../../sass/SCSS/simple-inheritance.scss */
+[hey], ho {
+  a: b;
+}
+
+/* line 34, ../../sass/SCSS/simple-inheritance.scss */
+ho {
+  c: d;
+}
+
+/* line 39, ../../sass/SCSS/simple-inheritance.scss */
+fancy outer space vehicle, fancy outer space new american mars rover, new american mars fancy outer space rover {
+  insides: advanced;
+}
+
+/* line 43, ../../sass/SCSS/simple-inheritance.scss */
+new american mars rover {
+  wheels: big;
+}
+
+/* line 48, ../../sass/SCSS/simple-inheritance.scss */
+foo, a b c {
+  something: whatever;
+}
+
+/* line 52, ../../sass/SCSS/simple-inheritance.scss */
+a b c {
+  blah: blah;
+}
+
+/* line 57, ../../sass/SCSS/simple-inheritance.scss */
+d e f, d e g {
+  blah: blah;
+}
+
+/* line 61, ../../sass/SCSS/simple-inheritance.scss */
+g {
+  bloo: bloo;
+}

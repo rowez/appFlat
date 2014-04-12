@@ -1,0 +1,17 @@
+/* line 1, ../../sass/SCSS/each.scss */
+div {
+  color: singleton;
+  divider: 3;
+}
+/* line 8, ../../sass/SCSS/each.scss */
+div span {
+  msg: foo;
+}
+/* line 8, ../../sass/SCSS/each.scss */
+div span {
+  msg: bar;
+}
+/* line 8, ../../sass/SCSS/each.scss */
+div span {
+  msg: hux;
+}

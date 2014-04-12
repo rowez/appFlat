@@ -1,0 +1,13 @@
+/* line 9, ../../sass/SCSS/_filename_fn_import.scss */
+filename {
+  imported: filename();
+}
+
+/* line 11, ../../sass/SCSS/filename_fn.scss */
+filename {
+  local: filename();
+  local-mixin: filename();
+  local-function: filename();
+  imported-mixin: filename();
+  imported-function: filename();
+}

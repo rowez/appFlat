@@ -1,0 +1,9 @@
+/* line 1, ../../sass/SCSS/inh.scss */
+foo.a, bar.a {
+  width: 10px;
+}
+
+/* line 5, ../../sass/SCSS/inh.scss */
+bar {
+  color: red;
+}

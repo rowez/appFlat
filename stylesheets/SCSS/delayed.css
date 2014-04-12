@@ -1,0 +1,32 @@
+/* line 8, ../../sass/SCSS/delayed.scss */
+div {
+  hoo: 3/4;
+  goo: 0.75;
+  foo: 20;
+  foo: 1;
+  coo: 0.88889;
+  bar: true;
+  bar: false and true;
+  bar: false;
+  blah: a;
+  blah: 0.75;
+  blah: b;
+  bloo: 0.75;
+  blix: "hey 0.75 ho";
+}
+
+@media screen and (hux: 3 / 4) {
+  /* line 26, ../../sass/SCSS/delayed.scss */
+  div {
+    color: red;
+  }
+}
+/* line 33, ../../sass/SCSS/delayed.scss */
+div {
+  blah: "ho 0.75 ho";
+}
+
+/* line 37, ../../sass/SCSS/delayed.scss */
+span {
+  fludge: 0.75;
+}

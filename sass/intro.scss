@@ -1,0 +1,131 @@
+@import 'compass/reset.scss';
+@import 'compass/layout.scss';
+@import 'compass/css3.scss';
+@import 'compass';
+
+
+//DeepSkyBlue, DodgerBlue, LightSkyBlue, LightSteelBlue, MediumBlue, MediumSlateBlue, MidnightBlue, PowderBlue, RoyalBlue, SkyBlue, SlateBlue, SteelBlue
+@mixin colors($bg, $tc){
+	color: $tc;
+	background: {
+		color: $bg;}
+}
+
+html { @include colors(navy,lightblue);}
+body { @include colors(Blue,MediumBlue);}
+div { 
+	@include colors(White,Black);
+	clear: both;
+	}
+
+#menu_wrap {
+	}
+
+#imageInhoud {
+	width: 50%;
+	height: auto;
+	background-color: red;
+	float: right;
+     }
+#imageInhoud > div {
+	background: url(http://localhost/appFlat/images/259x149_rijn.jpeg);
+}
+
+.inhoud {
+	float: right;
+	font-weight: bold;
+	}
+
+// http://alexwolfe.github.io/Buttons/
+#menuInhoud { 
+	@include colors(White,Black);
+	width: 100%;
+	h1 { @include colors(White,Orange);
+		@extend .inhoud;
+		font-size: xx-large;
+		margin: 5px 0px 5px 0px;
+		clear: both;
+		}
+	h2 { @include colors(White,Black);
+		@extend .inhoud;
+		font-size: x-large;
+		clear: both;
+		}
+	h3 { @include colors(White,Red);
+		@extend .inhoud;
+		font-size: large;
+		margin: 4px;
+		}
+	h4 { @include colors(White,Black);
+		clear: both;
+		@extend .inhoud;
+		font-weight: normal;
+		margin: 0px 0px 5px 0px;
+		}
+	h5 { color: blue;}
+	h6 { color: orange;}
+	float: right;
+}
+
+@mixin transitions($sec) {
+    -moz-transition:  opacity $sec ease-out; 
+       -o-transition: opacity $sec ease-out; 
+  -webkit-transition: opacity $sec ease-out; 
+      -ms-transition: opacity $sec ease-out; 
+	}
+	
+@mixin animations($sec) {
+    -webkit-animation: moveSlideshow $sec linear infinite;
+    -moz-animation:    moveSlideshow $sec linear infinite;
+	}
+
+#slideshow {
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slideshow > div {
+    height: 100%;
+    width: 8128px;
+    background: url(http://localhost/appFlat/images/8128x608.jpg);
+	  -webkit-background-size: contain;
+	  -moz-background-size: contain;
+	  -o-background-size: contain;
+	  background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include transitions(0.5s);
+    @include animations(60s);    
+}
+
+@-webkit-keyframes moveSlideshow {
+    0% { left: 0; }
+    100% { left: -500px; }
+}
+@-moz-keyframes moveSlideshow {
+    0% { left: 0; }
+    100% { left: -500px; }
+}
+
+img {
+	width: 500px;
+	height: 500px;
+	background-color: red;
+	}
+
+span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {}
+

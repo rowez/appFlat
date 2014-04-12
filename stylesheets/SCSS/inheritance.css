@@ -1,0 +1,74 @@
+/* line 1, ../../sass/SCSS/inheritance.scss */
+main content a box, main content a supplemtal text b sidebar, supplemtal text b main content a sidebar {
+  border: solid;
+}
+
+/* line 5, ../../sass/SCSS/inheritance.scss */
+supplemtal text b sidebar {
+  background: gray;
+}
+
+/********/
+/* line 12, ../../sass/SCSS/inheritance.scss */
+mammal, human {
+  blood: warm;
+}
+
+/* line 16, ../../sass/SCSS/inheritance.scss */
+mammal.furry.quadruped, human.furry.quadruped, dog.furry {
+  fur: lots;
+  legs: 4;
+}
+
+/* line 21, ../../sass/SCSS/inheritance.scss */
+human {
+  says: "hello";
+}
+
+/* line 26, ../../sass/SCSS/inheritance.scss */
+dog {
+  says: "woof";
+}
+
+/********/
+/* line 34, ../../sass/SCSS/inheritance.scss */
+region.country inhabitant.mouse, region.country citizen.mouse, region.country tax-payer.mouse {
+  eats: cheddar;
+}
+
+/* line 40, ../../sass/SCSS/inheritance.scss */
+region.city inhabitant.mouse, region.city region.country citizen.mouse, region.country region.city citizen.mouse, region.city tax-payer.mouse {
+  eats: camembert;
+}
+
+/* line 45, ../../sass/SCSS/inheritance.scss */
+region.country citizen {
+  ssn: 123 45 6789;
+}
+
+/* line 50, ../../sass/SCSS/inheritance.scss */
+region tax-payer {
+  rate: 17%;
+}
+
+/********/
+/* line 57, ../../sass/SCSS/inheritance.scss */
+foo, .a.bar, hux {
+  color: red;
+}
+
+/* line 61, ../../sass/SCSS/inheritance.scss */
+.a.bar {
+  background: gray;
+}
+
+/********/
+/* line 68, ../../sass/SCSS/inheritance.scss */
+foo, .a.bar, hux {
+  color: red;
+}
+
+/* line 72, ../../sass/SCSS/inheritance.scss */
+hux, .bar.a {
+  background: blue;
+}

@@ -1,0 +1,42 @@
+/* line 20, ../../sass/SCSS/mixin.scss */
+div {
+  background-image: /images/test.png;
+  hey: 4;
+  ho: hello;
+  hee: fudge;
+  fudge: walnut;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+  /* line 10, ../../sass/SCSS/mixin.scss */
+  div {
+    background-image: url('/images/test@2x.png');
+    -webkit-background-size: 100px 300px;
+  }
+}
+
+/* line 25, ../../sass/SCSS/mixin.scss */
+span {
+  blah: "foo bar";
+  bleh: url('/images/foo bar');
+}
+
+/* line 36, ../../sass/SCSS/mixin.scss */
+div {
+  foo-x: 1;
+  foo-y: 2;
+  foo-x: 1;
+  foo-y: 2;
+}
+
+/* line 46, ../../sass/SCSS/mixin.scss */
+div {
+  bar-x: 1;
+  bar-y: 2;
+  bar-x: 1;
+  bar-y: default;
+  bar-x: n1;
+  bar-y: n2;
+  bar-x: n1;
+  bar-y: default;
+  blah: hello;
+}

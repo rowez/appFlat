@@ -1,0 +1,7 @@
+/* line 14, ../../sass/SCSS/if-in-mixin.scss */
+div {
+  content: foo;
+  content: bar;
+  content: foo;
+  content: foo;
+}

@@ -1,0 +1,8 @@
+/* line 1, ../../sass/SCSS/eq.scss */
+div {
+  foo: true;
+  foo: true;
+  foo: a b false b c;
+  foo: true;
+  foo: false;
+}

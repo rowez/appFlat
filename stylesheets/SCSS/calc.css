@@ -1,0 +1,5 @@
+/* line 2, ../../sass/SCSS/calc.scss */
+body {
+  width: calc($x + 2 - 3em / hoolabaloo);
+  height: foo(4);
+}
