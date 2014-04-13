@@ -11,25 +11,45 @@
 		color: $bg;}
 }
 
-html { @include colors(navy,lightblue);}
-body { @include colors(Blue,MediumBlue);}
-div { 
-	@include colors(White,Black);
-	clear: both;
+@mixin imageBackground($bg,$tc,$url,$rp) {
+	color: $tc;
+	background: {
+		image: url($url);
+		color: $bg;
+		repeat: $rp;
+		size: contain;
+		origin: border-box;
+		}
+	  -webkit-background-size: contain;
+	  -moz-background-size: contain;
+	  -o-background-size: contain;
 	}
 
-#menu_wrap {
+html { @include colors(White,Black);}
+body { @include colors(White,Black);}
+div { 
+	@include colors(White,Black);
+	}
+#footer {
+	@include colors(White,Black);
+	text-align: center;
+	}
+
+.cols2-ri {
+	width: 50%;
+	height: 75%;
+	min-height: 320px;
+	float: right;
 	}
 
 #imageInhoud {
-	width: 50%;
-	height: auto;
-	background-color: red;
-	float: right;
+	@extend .cols2-ri;
      }
+
 #imageInhoud > div {
-	background: url(http://localhost/appFlat/images/259x149_rijn.jpeg);
-}
+	@include imageBackground(White,Black,'http://localhost/appFlat/images/1600x1200_lammeren.jpg', no-repeat);
+	min-height: 320px;
+	}
 
 .inhoud {
 	float: right;
@@ -39,7 +59,7 @@ div {
 // http://alexwolfe.github.io/Buttons/
 #menuInhoud { 
 	@include colors(White,Black);
-	width: 100%;
+	@extend .cols2-ri;
 	h1 { @include colors(White,Orange);
 		@extend .inhoud;
 		font-size: xx-large;
@@ -75,11 +95,12 @@ div {
 	}
 	
 @mixin animations($sec) {
-    -webkit-animation: moveSlideshow $sec linear infinite;
-    -moz-animation:    moveSlideshow $sec linear infinite;
+    -webkit-animation: moveSlideshow $sec linear 2s infinite alternate;
+    -moz-animation:    moveSlideshow $sec linear 2s infinite alternate;
 	}
 
 #slideshow {
+	clear: both;
     height: 100px;
     position: relative;
     overflow: hidden;
@@ -88,11 +109,7 @@ div {
 #slideshow > div {
     height: 100%;
     width: 8128px;
-    background: url(http://localhost/appFlat/images/8128x608.jpg);
-	  -webkit-background-size: contain;
-	  -moz-background-size: contain;
-	  -o-background-size: contain;
-	  background-size: contain;
+    @include imageBackground(yellow,red,'http://localhost/appFlat/images/8128x608.jpg', repeat);
     position: absolute;
     top: 0;
     left: 0;
@@ -125,7 +142,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {}
 
