@@ -1,4 +1,3 @@
-/* line 5, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,87 +19,100 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../lib/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 28, ../sass/intro.scss */
+@media (min-width: 960px) {
+  #imageInhoud {
+    width: 50%;
+    height: 75%;
+    min-height: 320px;
+    float: right;
+    position: relative;
+  }
+
+  #imageInhoud1 > div {
+    color: black;
+    background-color: white;
+    background-image: url("/appFlat/images/1680_4320x3240_IMG_4462.JPG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    min-height: 320px;
+  }
+}
 html {
-  color: black;
-  background-color: white;
+  color: #0052cc;
+  background-color: #0066ff;
 }
 
-/* line 29, ../sass/intro.scss */
 body {
-  color: black;
-  background-color: white;
+  color: #003d99;
+  background-color: #0052cc;
 }
 
-/* line 30, ../sass/intro.scss */
 div {
-  color: black;
-  background-color: white;
+  color: red;
+  background-color: #0066ff;
 }
 
-/* line 33, ../sass/intro.scss */
 #footer {
-  color: black;
-  background-color: white;
+  color: #002966;
+  background-color: #003d99;
   text-align: center;
 }
 
-/* line 38, ../sass/intro.scss */
-.cols2-ri, #imageInhoud, #menuInhoud {
+.cols2-ri {
   width: 50%;
   height: 75%;
   min-height: 320px;
   float: right;
+  position: relative;
 }
 
-/* line 49, ../sass/intro.scss */
+#imageInhoud {
+  clear: both;
+}
+
 #imageInhoud > div {
   color: black;
-  background-image: url("/appFlat/images/1600x1200_lammeren.jpg");
   background-color: white;
+  background-image: url("/appFlat/images/1600x1200_lammeren.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
@@ -110,19 +122,15 @@ div {
   min-height: 320px;
 }
 
-/* line 54, ../sass/intro.scss */
 .inhoud, #menuInhoud h1, #menuInhoud h2, #menuInhoud h3, #menuInhoud h4 {
   float: right;
   font-weight: bold;
 }
 
-/* line 60, ../sass/intro.scss */
 #menuInhoud {
   color: black;
   background-color: white;
-  float: right;
 }
-/* line 63, ../sass/intro.scss */
 #menuInhoud h1 {
   color: orange;
   background-color: white;
@@ -130,21 +138,18 @@ div {
   margin: 5px 0px 5px 0px;
   clear: both;
 }
-/* line 69, ../sass/intro.scss */
 #menuInhoud h2 {
   color: black;
   background-color: white;
   font-size: x-large;
   clear: both;
 }
-/* line 74, ../sass/intro.scss */
 #menuInhoud h3 {
   color: red;
   background-color: white;
   font-size: large;
   margin: 4px;
 }
-/* line 79, ../sass/intro.scss */
 #menuInhoud h4 {
   color: black;
   background-color: white;
@@ -152,16 +157,13 @@ div {
   font-weight: normal;
   margin: 0px 0px 5px 0px;
 }
-/* line 85, ../sass/intro.scss */
 #menuInhoud h5 {
   color: blue;
 }
-/* line 86, ../sass/intro.scss */
 #menuInhoud h6 {
   color: orange;
 }
 
-/* line 102, ../sass/intro.scss */
 #slideshow {
   clear: both;
   height: 100px;
@@ -169,13 +171,12 @@ div {
   overflow: hidden;
 }
 
-/* line 109, ../sass/intro.scss */
 #slideshow > div {
   height: 100%;
   width: 8128px;
   color: red;
-  background-image: url("/appFlat/images/8128x608.jpg");
   background-color: yellow;
+  background-image: url("/appFlat/images/8128x608to1337x100.jpg");
   background-repeat: repeat;
   background-size: contain;
   background-origin: border-box;
@@ -194,30 +195,234 @@ div {
 }
 
 @-webkit-keyframes moveSlideshow {
-  /* line 121, ../sass/intro.scss */
   0% {
     left: 0;
   }
 
-  /* line 122, ../sass/intro.scss */
   100% {
     left: -500px;
   }
 }
 @-moz-keyframes moveSlideshow {
-  /* line 125, ../sass/intro.scss */
   0% {
     left: 0;
   }
 
-  /* line 126, ../sass/intro.scss */
   100% {
     left: -500px;
   }
 }
-/* line 129, ../sass/intro.scss */
 img {
   width: 500px;
   height: 500px;
   background-color: red;
+}
+
+nav {
+  height: 40px;
+  width: 100%;
+  background: #455868;
+  font-size: 11pt;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  border-bottom: 2px solid #283744;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  height: 40px;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+nav a {
+  color: #fff;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  text-shadow: 1px 1px 0px #283744;
+}
+
+nav li a {
+  border-right: 1px solid #576979;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+nav li:last-child a {
+  border-right: 0;
+}
+
+nav a:hover, nav a:active {
+  background-color: #8c99a4;
+}
+
+nav a#pull {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .foo:after {
+    content: 'medium widths';
+  }
+}
+
+@media (min-width: 30em) {
+  .bar:after {
+    content: 'medium widths measured in ems';
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .baz:after {
+    content: 'medium, but not too wide';
+  }
+}
+
+@media (min-height: 300px) and (max-height: 700px) {
+  .tgif:after {
+    content: 'medium heights';
+  }
+}
+
+@media (max-width: 700px) {
+  .wtf:after #imageInhoud {
+    width: 50%;
+    height: 75%;
+    min-height: 320px;
+    float: right;
+    position: relative;
+  }
+  .wtf:after nav {
+    height: auto;
+  }
+  .wtf:after nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .wtf:after nav li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+  .wtf:after nav li a {
+    border-bottom: 1px solid #576979;
+    border-right: 1px solid #576979;
+  }
+  .wtf:after nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+  }
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+  .bbq:after {
+    content: 'wide, portrait';
+  }
+}
+
+@media (max-width: 700px) and (orientation: portrait) and (monochrome) {
+  .zztop:after {
+    content: 'wide, portrait, monochrome';
+  }
+}
+
+@media (monochrome) {
+  .csny:after {
+    content: 'monochrome';
+  }
+}
+
+@media (monochrome) {
+  .elp:after {
+    content: 'monochrome, print';
+  }
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .omgdpr:after {
+    content: 'hi resolutions';
+  }
+}
+
+@media (min-width: 30em) and (max-width: 40em) {
+  .rhcp:after {
+    content: 'between 30 and 40ems';
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    border-bottom: 0;
+  }
+
+  nav ul {
+    display: none;
+    height: auto;
+  }
+
+  nav a#pull {
+    display: block;
+    background-color: #283744;
+    width: 100%;
+    position: relative;
+  }
+
+  nav a#pull:after {
+    content: "";
+    background: url("nav-icon.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    rightright: 15px;
+    top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  nav li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  nav li a {
+    border-bottom: 1px solid #576979;
+  }
+}
+#foo {
+  background: red;
+}
+@media (min-width: 567px) {
+  #foo {
+    background: green;
+  }
+}
+.no-mqs #foo {
+  background: green;
 }

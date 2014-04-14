@@ -2,9 +2,18 @@
 @import 'compass/layout.scss';
 @import 'compass/css3.scss';
 @import 'compass';
+@import 'breakpoint';
 
+$color_ddd: #002966;
+$color_dd: #003D99;
+$color_d: #0052CC;
+$color_m: #0066FF;
+$color_l: #3385FF;
+$color_ll: #66A3FF;
+$color_lll: #99C2FF;
 
 //DeepSkyBlue, DodgerBlue, LightSkyBlue, LightSteelBlue, MediumBlue, MediumSlateBlue, MidnightBlue, PowderBlue, RoyalBlue, SkyBlue, SlateBlue, SteelBlue
+
 @mixin colors($bg, $tc){
 	color: $tc;
 	background: {
@@ -12,10 +21,9 @@
 }
 
 @mixin imageBackground($bg,$tc,$url,$rp) {
-	color: $tc;
+	@include colors($bg,$tc);
 	background: {
 		image: url($url);
-		color: $bg;
 		repeat: $rp;
 		size: contain;
 		origin: border-box;
@@ -24,14 +32,51 @@
 	  -moz-background-size: contain;
 	  -o-background-size: contain;
 	}
+// http://breakpoint-sass.com
 
-html { @include colors(White,Black);}
-body { @include colors(White,Black);}
+// create $breakpoint variables like so
+// assume min-width (by default) if only a number
+$breakpoint-medium-width:500px;
+$breakpoint-medium-width-em: 30em;
+// set min-width/max-width if both values are numbers
+$breakpoint-medium-not-wide: 500px 700px;
+// set min/max of feature if there are two numbers
+$breakpoint-medium-height: height 300px 700px;
+// if one value is a string, assume a feature/value pair
+$breakpoint-kind-of-wide: min-width 700px;
+$breakpoint-not-too-wide: max-width 700px;
+// for multidimensional lists, assume each item is a feature value pair
+$breakpoint-wide-portrait: (max-width 700px) (orientation portrait);
+// handle one-sided features (ie. monochrome)
+$breakpoint-wide-portrait-mono: (max-width 700px) (orientation portrait) (monochrome);
+$breakpoint-mono: monochrome;
+$breakpoint-hi-rez: min-resolution 1.5dppx;
+$breakpoint-max1280: max-width 1280px;
+$breakpoint-min960: min-width 960px;
+$breakpoint-max480: max-width 480px;
+$breakpoint-max320: max-width 320px;
+
+@include breakpoint($breakpoint-min960) {    
+  #imageInhoud {	
+	width: 50%;
+	height: 75%;
+	min-height: 320px;
+	float: right;
+	position: relative;
+}
+#imageInhoud1 > div {
+	@include imageBackground(White,Black,'/appFlat/images/1680_4320x3240_IMG_4462.JPG', no-repeat);
+	min-height: 320px;
+	}
+  }
+
+html { @include colors($color_m,$color_d);}
+body { @include colors($color_d,$color_dd);}
 div { 
-	@include colors(White,Black);
+	@include colors($color_m,red);
 	}
 #footer {
-	@include colors(White,Black);
+	@include colors($color_dd,$color_ddd);
 	text-align: center;
 	}
 
@@ -40,10 +85,12 @@ div {
 	height: 75%;
 	min-height: 320px;
 	float: right;
+	position: relative;
 	}
 
 #imageInhoud {
-	@extend .cols2-ri;
+	// @extend .cols2-ri;
+	clear: both;
      }
 
 #imageInhoud > div {
@@ -59,7 +106,7 @@ div {
 // http://alexwolfe.github.io/Buttons/
 #menuInhoud { 
 	@include colors(White,Black);
-	@extend .cols2-ri;
+	// @extend .cols2-ri;
 	h1 { @include colors(White,Orange);
 		@extend .inhoud;
 		font-size: xx-large;
@@ -84,7 +131,7 @@ div {
 		}
 	h5 { color: blue;}
 	h6 { color: orange;}
-	float: right;
+	//float: right;
 }
 
 @mixin transitions($sec) {
@@ -109,7 +156,7 @@ div {
 #slideshow > div {
     height: 100%;
     width: 8128px;
-    @include imageBackground(yellow,red,'/appFlat/images/8128x608.jpg', repeat);
+    @include imageBackground(yellow,red,'/appFlat/images/8128x608to1337x100.jpg', repeat);
     position: absolute;
     top: 0;
     left: 0;
@@ -131,18 +178,215 @@ img {
 	height: 500px;
 	background-color: red;
 	}
+		
+nav {  
+    height: 40px;  
+    width: 100%;  
+    background: #455868;
+    font: {
+    size: 11pt;  
+    family: 'PT Sans', Arial, sans-serif;  
+    weight: bold;  
+    }
+    position: relative;  
+    border-bottom: 2px solid #283744;  
+}  
 
+nav ul {  
+    padding: 0;  
+    margin: 0 auto;  
+    width: 600px;  
+    height: 40px;  
+} 
+
+nav li {  
+	display: inline;  
+	float: left;  
+}  
+.clearfix:before,  
+.clearfix:after {  
+	content: " ";  
+	display: table;  
+}  
+.clearfix:after {  
+	clear: both;  
+}  
+.clearfix {  
+	*zoom: 1;  
+}  
+
+nav a {  
+    color: #fff; 
+	display: inline-block;  
+	width: 150px;  
+	text-align: center;  
+	text-decoration: none;  
+	line-height: 40px;  
+	text-shadow: 1px 1px 0px #283744;  
+}  
+
+nav li a {  
+    border-right: 1px solid #576979;  
+    box-sizing:border-box;  
+    -moz-box-sizing:border-box;  
+    -webkit-box-sizing:border-box;  
+}  
+nav li:last-child a {  
+    border-right: 0;  
+} 
+
+nav a:hover, nav a:active {  
+	background-color: #8c99a4;  
+}  
+    
+nav a#pull {  
+    display: none;  
+}    
+    
 span, applet, object, iframe,
 p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+abbr, acronym, address, big, cite, code,
 del, dfn, em, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, output, ruby, section, summary,
 time, mark, audio, video {}
+
+
+.foo:after {
+  @include breakpoint($breakpoint-medium-width) {
+    content: 'medium widths';
+  }
+}
+.bar:after {
+  @include breakpoint($breakpoint-medium-width-em) {
+    content: 'medium widths measured in ems';
+  }
+}
+.baz:after {
+  @include breakpoint($breakpoint-medium-not-wide) {
+    content: 'medium, but not too wide';
+  }
+}
+.tgif:after {
+ @include breakpoint($breakpoint-medium-height) {
+   content: 'medium heights';
+ }
+}
+.wtf:after {
+  @include breakpoint($breakpoint-not-too-wide) {
+#imageInhoud {
+  	width: 50%;
+	height: 75%;
+	min-height: 320px;
+	float: right;
+	position: relative;
+}
+    nav {   
+        height: auto;  
+    }  
+    nav ul {  
+        width: 100%;  
+        display: block;  
+        height: auto;  
+    }  
+    nav li {  
+        width: 50%;  
+        float: left;  
+        position: relative;  
+    }  
+    nav li a {  
+        border-bottom: 1px solid #576979;  
+        border-right: 1px solid #576979;  
+    }  
+    nav a {  
+        text-align: left;  
+        width: 100%;  
+        text-indent: 25px;  
+    }  
+  }
+}
+.bbq:after {
+  @include breakpoint($breakpoint-wide-portrait) {
+    content: 'wide, portrait';
+  }
+}
+.zztop:after {
+  @include breakpoint($breakpoint-wide-portrait-mono) {
+    content: 'wide, portrait, monochrome';
+  }
+}
+.csny:after {
+  @include breakpoint($breakpoint-mono) {
+    content: 'monochrome';
+  }
+}
+.elp:after {
+  @include breakpoint($breakpoint-mono, print) {
+    content: 'monochrome, print';
+  }
+}
+.omgdpr:after {
+ @include breakpoint($breakpoint-hi-rez) {
+  content: 'hi resolutions';
+ }
+}
+
+// You can use breakpoint without variables too.
+.rhcp:after {
+  @include breakpoint(30em 40em) {
+    content: 'between 30 and 40ems';
+  }
+}
+
+@include breakpoint($breakpoint-max480) {     nav {  
+        border-bottom: 0;  
+    }  
+    nav ul {  
+        display: none;  
+        height: auto;  
+    }  
+    nav a#pull {  
+        display: block;  
+        background-color: #283744;  
+        width: 100%;  
+        position: relative;  
+    }  
+    nav a#pull:after {  
+        content:"";  
+        background: url('nav-icon.png') no-repeat;  
+        width: 30px;  
+        height: 30px;  
+        display: inline-block;  
+        position: absolute;  
+        rightright: 15px;  
+        top: 10px;  
+    }  
+    
+    }
+@include breakpoint($breakpoint-max320) {     nav li {  
+        display: block;  
+        float: none;  
+        width: 100%;  
+    }  
+    nav li a {  
+        border-bottom: 1px solid #576979;  
+    }  
+    }
+
+$breakpoint-no-queries: false;
+$breakpoint-no-query-fallbacks: true;
+
+#foo {
+  background: red;
+  @include breakpoint(567px, $no-query: '.no-mqs') {
+    background: green;
+  }
+}
+
 
