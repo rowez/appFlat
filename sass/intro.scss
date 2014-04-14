@@ -47,7 +47,7 @@ div {
      }
 
 #imageInhoud > div {
-	@include imageBackground(White,Black,'http://localhost/appFlat/images/1600x1200_lammeren.jpg', no-repeat);
+	@include imageBackground(White,Black,'/appFlat/images/1600x1200_lammeren.jpg', no-repeat);
 	min-height: 320px;
 	}
 
@@ -109,7 +109,7 @@ div {
 #slideshow > div {
     height: 100%;
     width: 8128px;
-    @include imageBackground(yellow,red,'http://localhost/appFlat/images/8128x608.jpg', repeat);
+    @include imageBackground(yellow,red,'/appFlat/images/8128x608.jpg', repeat);
     position: absolute;
     top: 0;
     left: 0;

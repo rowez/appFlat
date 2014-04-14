@@ -99,7 +99,7 @@ div {
 /* line 49, ../sass/intro.scss */
 #imageInhoud > div {
   color: black;
-  background-image: url("http://localhost/appFlat/images/1600x1200_lammeren.jpg");
+  background-image: url("/appFlat/images/1600x1200_lammeren.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
@@ -174,7 +174,7 @@ div {
   height: 100%;
   width: 8128px;
   color: red;
-  background-image: url("http://localhost/appFlat/images/8128x608.jpg");
+  background-image: url("/appFlat/images/8128x608.jpg");
   background-color: yellow;
   background-repeat: repeat;
   background-size: contain;
